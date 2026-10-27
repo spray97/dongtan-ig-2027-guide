@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>2027학년도 동탄국제고 입학전형 준비 매뉴얼</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+:root {
+  --paper: #FAF9F6;
+  --sheet: #FFFFFF;
+  --ink: #18181B;
+  --ink2: #27272A;
+  --mute: #52525B;
+  --mute2: #71717A;
+  --rule: #A1A1AA;
+  --rule2: #E4E4E7;
+  --wash: #F4F4F5;
+  --navy: #1E293B;
+  --wine: #7F1D1D;
+  --amber: #92400E;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-text-size-adjust: 100%;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.serif { font-family: 'Noto Serif KR', 'Batang', 'Nanum Myeongjo', serif; }
+a { color: var(--navy); text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+button, select, input, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+p { margin: 0 0 .8em; }
+ul, ol { margin: 0 0 .9em; padding-left: 1.3em; }
+li { margin-bottom: .25em; }
+strong { font-weight: 700; }
+
+/* masthead */
+.masthead { background: var(--sheet); border-bottom: 1px solid var(--ink); }
+.masthead-in { max-width: 1040px; margin: 0 auto; padding: 36px 24px 28px; display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; }
+.eyebrow { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--mute2); margin: 0 0 10px; }
+.masthead h1 { font-family: 'Noto Serif KR', 'Batang', serif; font-weight: 700; font-size: clamp(24px, 4.2vw, 36px); line-height: 1.35; margin: 0 0 10px; letter-spacing: -.01em; }
+.masthead .sub { color: var(--mute); font-size: 14px; margin: 0; max-width: 62ch; }
+.dday { border: 1px solid var(--ink); padding: 14px 18px; min-width: 210px; text-align: right; background: var(--sheet); }
+.dday .lab { font-size: 12px; color: var(--mute); margin: 0; }
+.dday .num { font-family: 'Noto Serif KR', serif; font-size: 34px; font-weight: 700; line-height: 1.2; margin: 2px 0; color: var(--navy); }
+.dday .next { font-size: 12px; color: var(--mute); margin: 0; line-height: 1.5; }
+
+/* nav */
+.nav { position: sticky; top: 0; z-index: 20; background: var(--sheet); border-bottom: 1px solid var(--rule2); }
+.nav-in { max-width: 1040px; margin: 0 auto; padding: 0 24px; display: flex; align-items: stretch; justify-content: space-between; gap: 12px; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; flex: 1; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { background: none; border: 0; border-bottom: 2px solid transparent; padding: 10px 14px 8px; cursor: pointer; text-align: left; white-space: nowrap; color: var(--mute); line-height: 1.35; }
+.tab small { display: block; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--mute2); }
+.tab span { font-size: 14px; font-weight: 600; }
+.tab:hover { color: var(--ink); background: var(--wash); }
+.tab.active { color: var(--ink); border-bottom-color: var(--navy); }
+.tab.active small { color: var(--navy); }
+.print-btn { align-self: center; background: none; border: 1px solid var(--rule); padding: 6px 12px; font-size: 13px; cursor: pointer; white-space: nowrap; }
+.print-btn:hover { background: var(--wash); }
+
+/* sheet */
+main { max-width: 1040px; margin: 0 auto; padding: 28px 24px 56px; }
+.sheet { background: var(--sheet); border: 1px solid var(--rule2); padding: 40px 44px 28px; margin-bottom: 28px; }
+.sheet.is-hidden { display: none; }
+.part-no { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--mute2); margin: 0 0 4px; }
+.sheet > h2 { font-family: 'Noto Serif KR', 'Batang', serif; font-weight: 700; font-size: clamp(21px, 3.2vw, 28px); line-height: 1.4; margin: 0 0 6px; padding-bottom: 14px; border-bottom: 2px solid var(--ink); }
+.lede { color: var(--mute); margin: 14px 0 6px; }
+h3 { font-family: 'Noto Serif KR', 'Batang', serif; font-weight: 700; font-size: 18px; line-height: 1.45; margin: 38px 0 12px; }
+h3 .sec { font-family: 'Pretendard', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: .12em; color: var(--mute2); margin-right: 10px; }
+h4 { font-size: 15px; font-weight: 700; margin: 22px 0 8px; }
+
+/* table */
+.tbl-wrap { overflow-x: auto; margin: 10px 0 18px; }
+table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.6; border-top: 2px solid var(--ink); }
+table.tbl caption { caption-side: top; text-align: left; font-weight: 700; font-size: 14px; padding: 0 0 8px; }
+table.tbl thead th { text-align: left; font-weight: 700; padding: 9px 12px; border-bottom: 1px solid var(--ink); white-space: nowrap; background: var(--sheet); }
+table.tbl td, table.tbl tbody th { padding: 9px 12px; border-bottom: 1px solid var(--rule2); vertical-align: top; text-align: left; font-weight: 400; }
+table.tbl tbody th { font-weight: 600; white-space: nowrap; }
+table.tbl tfoot td { border-bottom: 1px solid var(--ink); font-weight: 600; }
+table.tbl.wide { min-width: 0; }
+table.tbl .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.tbl .ctr { text-align: center; }
+table.tbl tr.hl td, table.tbl tr.hl th { background: var(--wash); }
+.tbl-note { font-size: 13px; color: var(--mute2); margin: -8px 0 16px; }
+
+/* callouts */
+.note { border-left: 3px solid var(--navy); background: var(--wash); padding: 12px 16px; margin: 14px 0 18px; font-size: 14.5px; }
+.note > :last-child { margin-bottom: 0; }
+.note .ttl { display: block; font-weight: 700; margin-bottom: 4px; color: var(--navy); }
+.note.warn { border-left-color: var(--wine); }
+.note.warn .ttl { color: var(--wine); }
+.note.caution { border-left-color: var(--amber); }
+.note.caution .ttl { color: var(--amber); }
+
+.keys { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); margin: 18px 0 8px; }
+.keys > div { padding: 12px 14px; border-right: 1px solid var(--rule2); }
+.keys > div:last-child { border-right: 0; }
+.keys .k { font-size: 12px; color: var(--mute2); margin: 0; letter-spacing: .04em; }
+.keys .v { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 18px; margin: 2px 0 0; line-height: 1.4; }
+.keys .d { font-size: 12.5px; color: var(--mute); margin: 2px 0 0; line-height: 1.5; }
+
+/* rate bars */
+.bars { margin: 8px 0 18px; border-top: 2px solid var(--ink); }
+.bar-year { padding: 10px 0; border-bottom: 1px solid var(--rule2); display: grid; grid-template-columns: 5.2rem 1fr; gap: 10px; }
+.bar-year .y { font-weight: 700; font-size: 14px; }
+.rbar { display: grid; grid-template-columns: 5.5rem 1fr 3.2rem; gap: 10px; align-items: center; font-size: 13px; line-height: 1.7; }
+.rbar .track { height: 9px; background: var(--rule2); }
+.rbar .fill { height: 100%; width: var(--w); background: var(--navy); }
+.rbar.b .fill { background: var(--mute2); }
+.rbar.c .fill { background: var(--rule); }
+.rbar .val { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* forms */
+.panel { border: 1px solid var(--ink); padding: 20px 22px; margin: 16px 0 20px; }
+.panel > .ttl { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 16px; margin: 0 0 12px; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px 24px; }
+.field { display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+.field label, .field .lab { font-weight: 600; font-size: 13px; color: var(--ink2); }
+select, input[type=number], input[type=text], textarea { border: 1px solid var(--rule); background: var(--sheet); padding: 7px 10px; border-radius: 0; width: 100%; }
+select { cursor: pointer; }
+textarea { resize: vertical; line-height: 1.7; }
+.btn { background: var(--sheet); border: 1px solid var(--ink); padding: 7px 14px; font-size: 14px; cursor: pointer; border-radius: 0; }
+.btn:hover { background: var(--wash); }
+.btn.primary { background: var(--navy); color: #fff; border-color: var(--navy); }
+.btn.primary:hover { background: var(--ink); }
+.btn.ghost { border-color: var(--rule); color: var(--mute); }
+.btn-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; align-items: center; }
+.hint { font-size: 13px; color: var(--mute2); }
+
+/* simulator */
+.sim-result { border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); margin-top: 18px; padding: 16px 0; }
+.score-row { display: flex; flex-wrap: wrap; gap: 8px 32px; align-items: baseline; margin-bottom: 6px; }
+.score-big { font-family: 'Noto Serif KR', serif; font-size: 34px; font-weight: 700; line-height: 1.2; color: var(--navy); }
+.score-big small { font-size: 15px; color: var(--mute); font-weight: 500; margin-left: 4px; }
+.score-sub { font-size: 14px; color: var(--mute); }
+.case-tag { display: inline-block; border: 1px solid var(--ink); padding: 2px 10px; font-weight: 700; font-size: 14px; letter-spacing: .04em; margin-right: 8px; }
+.case-tag.warn { border-color: var(--wine); color: var(--wine); }
+.case-ttl { font-weight: 700; font-size: 16px; margin: 14px 0 6px; }
+.case-body p { margin-bottom: .6em; font-size: 15px; }
+.rank-first td { background: var(--wash); font-weight: 600; }
+.flag { font-size: 12px; font-weight: 700; color: var(--wine); }
+
+/* checker */
+.meter { height: 12px; background: var(--rule2); margin: 8px 0 6px; }
+.meter > div { height: 100%; width: 0; background: var(--navy); transition: width .12s linear; }
+.meter.over > div { background: var(--wine); }
+.counts { display: flex; flex-wrap: wrap; gap: 4px 22px; font-size: 14px; }
+.counts b { font-variant-numeric: tabular-nums; }
+.counts .over { color: var(--wine); font-weight: 700; }
+.warn-list { margin-top: 12px; }
+.warn-item { display: grid; grid-template-columns: 6.2rem 5rem 1fr; gap: 4px 12px; padding: 7px 0; border-bottom: 1px solid var(--rule2); font-size: 14px; }
+.warn-item .lv { font-weight: 700; color: var(--amber); }
+.warn-item .lv.zero { color: var(--wine); }
+.warn-item .ctx { color: var(--mute); word-break: break-all; }
+.clean { padding: 8px 0; color: var(--mute); font-size: 14px; }
+.essay { border: 1px solid var(--rule2); padding: 14px 18px; margin: 10px 0 16px; background: var(--paper); }
+.essay h4 { margin: 0 0 6px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px; }
+.essay h4 .count { font-weight: 400; font-size: 13px; color: var(--mute2); }
+.essay p { font-size: 15px; line-height: 1.9; margin: 0; text-align: justify; }
+
+/* timer */
+.timer-box { display: grid; grid-template-columns: auto 1fr; gap: 14px 32px; align-items: center; }
+.timer-clock { font-family: 'Noto Serif KR', serif; font-size: 56px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; color: var(--navy); }
+.timer-phase { font-weight: 700; font-size: 16px; margin: 0 0 8px; min-height: 1.75em; }
+.segs { display: flex; height: 38px; border: 1px solid var(--ink); }
+.seg { position: relative; display: flex; align-items: center; justify-content: center; font-size: 12px; border-right: 1px solid var(--ink); overflow: hidden; background: var(--sheet); }
+.seg:last-child { border-right: 0; }
+.seg .fillbar { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--rule2); }
+.seg span { position: relative; text-align: center; line-height: 1.25; }
+.seg.cur { box-shadow: inset 0 -3px 0 var(--navy); font-weight: 700; }
+
+/* worksheet */
+.ws { border: 1px solid var(--rule); padding: 16px 18px; margin: 14px 0; }
+.ws h4 { margin: 0 0 8px; }
+.ws .ws-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 16px; margin-top: 10px; }
+.ws textarea { min-height: 3.6em; overflow: hidden; resize: none; }
+.ws .q textarea { min-height: 3em; font-weight: 600; }
+
+/* checklist */
+.prog { display: flex; align-items: center; gap: 14px; margin: 8px 0 10px; }
+.prog .meter { flex: 1; margin: 0; }
+.prog b { font-family: 'Noto Serif KR', serif; font-size: 22px; min-width: 3.4em; text-align: right; font-variant-numeric: tabular-nums; }
+.chk-group { margin: 18px 0 6px; }
+.chk-group h4 { margin: 0 0 4px; padding-bottom: 4px; border-bottom: 1px solid var(--ink); font-size: 14px; display: flex; justify-content: space-between; gap: 8px; }
+.chk-group h4 span { font-weight: 400; color: var(--mute2); font-size: 13px; }
+.chk { display: flex; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--rule2); font-size: 14.5px; align-items: flex-start; cursor: pointer; }
+.chk input { margin-top: .42em; width: 17px; height: 17px; accent-color: var(--navy); flex: none; }
+.chk.done span { color: var(--mute2); text-decoration: line-through; text-decoration-color: var(--rule); }
+
+/* reference */
+.ref { list-style: none; padding: 0; margin: 10px 0; border-top: 2px solid var(--ink); counter-reset: ref; }
+.ref li { counter-increment: ref; padding: 12px 0 12px 2.6em; border-bottom: 1px solid var(--rule2); position: relative; margin: 0; }
+.ref li::before { content: counter(ref, decimal-leading-zero); position: absolute; left: 0; top: 12px; font-family: 'Noto Serif KR', serif; font-weight: 700; color: var(--mute2); }
+.ref .nm { font-weight: 700; display: block; }
+.ref .ds { font-size: 14px; color: var(--mute); display: block; }
+.ref .ur { font-size: 13px; word-break: break-all; }
+
+.qa dt { font-weight: 700; margin-top: 14px; }
+.qa dd { margin: 2px 0 0; color: var(--ink2); font-size: 15px; }
+.qa dt::before { content: 'Q. '; color: var(--mute2); }
+.qa dd::before { content: 'A. '; color: var(--mute2); font-weight: 700; }
+
+.foot { max-width: 1040px; margin: 0 auto; padding: 0 24px 48px; font-size: 12.5px; color: var(--mute2); line-height: 1.7; }
+
+@media (max-width: 760px) {
+  .masthead-in { grid-template-columns: 1fr; padding: 24px 16px 20px; }
+  .dday { text-align: left; }
+  .nav-in { padding: 0 8px; }
+  .print-btn { display: none; }
+  main { padding: 16px 10px 40px; }
+  .sheet { padding: 24px 16px 16px; }
+  table.tbl.wide { min-width: 560px; }
+  .timer-box { grid-template-columns: 1fr; }
+  .ws .ws-grid { grid-template-columns: 1fr; }
+  .warn-item { grid-template-columns: 5.5rem 1fr; }
+  .warn-item .ctx { grid-column: 1 / -1; }
+  .bar-year { grid-template-columns: 1fr; gap: 2px; }
+  .rbar { grid-template-columns: 5rem 1fr 3rem; }
+  .keys > div { border-right: 0; border-bottom: 1px solid var(--rule2); }
+}
+
+@media print {
+  @page { size: A4; margin: 16mm 14mm; }
+  body { background: #fff; font-size: 11pt; }
+  .no-print, .nav { display: none !important; }
+  .sheet, .sheet.is-hidden { display: block !important; border: 0; padding: 0; margin: 0; break-before: page; }
+  .sheet:first-of-type { break-before: auto; }
+  .masthead-in { padding: 0 0 10px; }
+  .dday { display: none; }
+  main { padding: 0; max-width: none; }
+  table.tbl, .note, .essay, .ws, .chk, .panel { break-inside: avoid; }
+  h3 { break-after: avoid; }
+  a { color: var(--ink); text-decoration: none; }
+  .ref .ur::after { content: ''; }
+  .panel .btn-row, .timer-ctl { display: none !important; }
+  textarea, select, input[type=number] { border: 1px solid var(--rule); }
+  .foot { padding: 12px 0 0; }
+}
+body.is-printing .sheet, body.is-printing .sheet.is-hidden { display: block; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-in">
+    <div>
+      <p class="eyebrow">Admission Strategy Report &middot; 2027학년도 신입생 &middot; 화성시 재학생 맞춤</p>
+      <h1>2027학년도 동탄국제고<br>입학전형 준비 매뉴얼</h1>
+      <p class="sub">기준 자료: 동탄국제고등학교 2027학년도 신입생 입학전형 요강과 학교 공지, 최근 5개년(2022~2026학년도) 경쟁률 자료. 이 문서는 요약이며, 최종 기준은 학교 공고 원문입니다.</p>
+    </div>
+    <div class="dday" aria-live="off">
+      <p class="lab">1단계 원서접수 개시 (2026. 12. 4.)</p>
+      <p class="num" id="dday-main">D-</p>
+      <p class="next" id="dday-next">&nbsp;</p>
+    </div>
+  </div>
+</header>
+
+<nav class="nav no-print" id="nav" aria-label="챕터 이동">
+  <div class="nav-in">
+    <div class="tabs">
+      <button type="button" class="tab active" id="btn-part1" data-tab="part1"><small>Part 1</small><span>전형 · 5개년 경쟁률</span></button>
+      <button type="button" class="tab" id="btn-part2" data-tab="part2"><small>Part 2</small><span>1단계 · 시뮬레이터</span></button>
+      <button type="button" class="tab" id="btn-part3" data-tab="part3"><small>Part 3</small><span>자소서 · 점검기</span></button>
+      <button type="button" class="tab" id="btn-part4" data-tab="part4"><small>Part 4</small><span>심층면접 · 워크시트</span></button>
+      <button type="button" class="tab" id="btn-part5" data-tab="part5"><small>Part 5</small><span>일정 · 행정 · 기숙사</span></button>
+      <button type="button" class="tab" id="btn-ref" data-tab="ref"><small>Ref</small><span>공식 레퍼런스 10선</span></button>
+      <button type="button" class="tab" id="btn-all" data-tab="all"><small>All</small><span>전체 보기</span></button>
+    </div>
+    <button type="button" class="print-btn" id="btn-print">인쇄 / PDF 저장</button>
+  </div>
+</nav>
+
+<main id="content">
+
+<!-- ===================== PART 1 ===================== -->
+<section class="sheet" id="sec-part1" aria-labelledby="h-part1">
+  <p class="part-no">Part 01</p>
+  <h2 id="h-part1">전형 구조와 5개년 경쟁률</h2>
+  <p class="lede">화성시 소재 중학교에 재학 중이면 일반전형과 지역우수자전형 중에서 고를 수 있습니다. 두 전형은 중복 지원이 되지 않으므로, 원서접수 전에 어느 쪽이 유리한지 판단해야 합니다.</p>
+
+  <div class="note warn">
+    <span class="ttl">검증 상태 (2026. 10. 27. 조사 기준) — 접수 전에 원문과 반드시 대조하세요</span>
+    <ul>
+      <li><strong>학교 공지로 직접 확인:</strong> 2022~2026학년도 지원자 수, 2023~2026학년도 1단계 면접 대상 인원, 2026학년도 일반전형 1단계 합격선(160점)과 동점자 처리 범위, 사회통합전형 지원 자격과 선발 방식.</li>
+      <li><strong>입시 매체로만 확인:</strong> 2027학년도 접수 12. 4. ~ 12. 10., 1단계 발표 12. 14., 면접 12. 24. 일정.</li>
+      <li><strong>원문으로 확인하지 못함:</strong> 영어 환산표·출결 감점·동점자 순서(위 학교 공지의 합격선과 동점자 처리 방식과는 부합), 자기소개서 배점·글자 수, 제출 서류 목록, 자기소개서 입력일 12. 15.~16., 최종 발표일 12. 29., 접수 대행처.</li>
+    </ul>
+    <p>날짜와 점수 기준은 학교 홈페이지 <a href="https://www.dtg.hs.kr/sys/bbs/board.php?bo_table=020203" target="_blank" rel="noopener noreferrer">입학안내 &gt; 신입생모집 &gt; 입학전형 요강</a>의 원문과 하나씩 맞춰 본 뒤 사용하세요.</p>
+  </div>
+
+  <div class="keys">
+    <div><p class="k">지원 자격</p><p class="v">전형 선택 가능</p><p class="d">일반 120명 / 지역우수자 40명 (중복 불가)</p></div>
+    <div><p class="k">1단계</p><p class="v">영어 160점</p><p class="d">중2·3 영어 4개 학기 환산 − 출결 감점</p></div>
+    <div><p class="k">원서접수</p><p class="v">12. 4. ~ 12. 10.</p><p class="d">12. 10. 17:00 마감</p></div>
+    <div><p class="k">자소서</p><p class="v">1,500자</p><p class="d">12. 15. ~ 12. 16. 온라인 입력</p></div>
+    <div><p class="k">면접 · 발표</p><p class="v">12. 24. / 12. 29.</p><p class="d">면접 40점, 총 200점 사정</p></div>
+  </div>
+
+  <h3><span class="sec">1.1</span>이 학생의 전략적 위치</h3>
+  <ul>
+    <li><strong>전형 선택권.</strong> 2026년 3월 3일 이전부터 화성시 소재 중학교에 재학한 학생은 지역우수자전형(40명)에 지원할 수 있습니다. 일반전형(120명)에도 지원할 수 있으나 둘 중 하나만 고를 수 있습니다.</li>
+    <li><strong>경쟁 밀도.</strong> 국제고는 여학생 비율이 높은 편(약 75% 안팎)이어서 어학 능력이나 내신 성실도만으로는 차이가 나기 어렵습니다. 사회과학·국제 이슈를 파고든 깊이와 비판적 독서가 차별 지점이 됩니다.</li>
+    <li><strong>기숙사와 통학.</strong> 전교생 기숙사(대부분 2인 1실)이며, 화성시 거주 학생은 금요일 귀가·일요일 입소 때 이동 시간이 10~30분 안팎이라 주말 체력과 학습 관리에 유리합니다.</li>
+  </ul>
+
+  <h3><span class="sec">1.2</span>모집 정원과 지원 자격</h3>
+  <div class="tbl-wrap">
+    <table class="tbl wide">
+      <caption>2027학년도 모집 정원 (공립 특수목적고 국제계열, 남녀공학 통합 선발, 수업료 면제)</caption>
+      <thead><tr><th>구분</th><th>전형</th><th class="num">인원</th><th class="num">비율</th><th>지원 자격 요약</th></tr></thead>
+      <tbody>
+        <tr><th>정원 내</th><th>일반전형</th><td class="num">120명</td><td class="num">60%</td><td>경기도 거주 중학교 졸업(예정)자, 그리고 국제고가 없는 타 시·도 중학교 졸업(예정)자</td></tr>
+        <tr class="hl"><th>정원 내</th><th>지역우수자전형</th><td class="num">40명</td><td class="num">20%</td><td>2026년 3월 3일 이전부터 화성시 소재 중학교에 재학하며 화성시 중학교 졸업예정인 자 (화성오산교육지원청 학군 배정으로 타 시 중학교에 배정된 경우 포함)</td></tr>
+        <tr><th>정원 내</th><th>사회통합전형</th><td class="num">40명</td><td class="num">20%</td><td>1순위 기회균등(기초수급·차상위·한부모 등) 60% 우선 선발, 미달 시 2·3순위 사회다양성(다자녀 3자녀 이상 가구 등 소득 8분위 이하) 선발</td></tr>
+        <tr><th>정원 외</th><th>특례입학대상자</th><td class="num">4명 이내</td><td class="num">2%</td><td>요강 원문 확인</td></tr>
+        <tr><th>정원 외</th><th>보훈자녀</th><td class="num">6명 이내</td><td class="num">3%</td><td>국가유공자 자녀</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note warn"><span class="ttl">중복 지원 불가</span>정원 내 세 전형은 중복 지원이 안 됩니다. 접수 단계에서 한 번 선택한 전형은 바꿀 수 없다고 보고 신중히 결정하세요(변경 가능 여부는 요강 원문 확인).</div>
+
+  <h3><span class="sec">1.3</span>전형 일정</h3>
+  <div class="tbl-wrap">
+    <table class="tbl wide">
+      <thead><tr><th>단계</th><th>일시</th><th>비고</th></tr></thead>
+      <tbody>
+        <tr><th>출결 산출 마감</th><td>2026. 11. 30.(월)</td><td>중1~중3 미인정 출결을 이 날짜까지 반영</td></tr>
+        <tr><th>1단계 원서접수·서류제출</th><td>2026. 12. 4.(금) ~ 12. 10.(목) 17:00</td><td>온라인 접수 후 출력물을 본교 방문 또는 등기우편으로 제출 (도착분 인정)</td></tr>
+        <tr><th>1단계 합격자 발표</th><td>2026. 12. 14.(월)</td><td>모집 정원의 2배수 선발</td></tr>
+        <tr><th>자기소개서 온라인 입력</th><td>2026. 12. 15.(화) ~ 12. 16.(수) 17:00</td><td>입력 기간이 이틀뿐이므로 11월 중 완성해 둘 것</td></tr>
+        <tr><th>2단계 면접</th><td>2026. 12. 24.(목)</td><td>면접 40점</td></tr>
+        <tr><th>최종 합격자 발표</th><td>2026. 12. 29.(화)</td><td>1단계 160점 + 면접 40점 = 200점 사정</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3><span class="sec">1.4</span>최근 5개년 경쟁률 (2022~2026학년도)</h3>
+  <div class="tbl-wrap">
+    <table class="tbl">
+      <caption>표 1. 전체 종합 비교 (정원 내 200명 기준)</caption>
+      <thead><tr><th>학년도</th><th class="num">정원 내 지원자</th><th class="num">전체 경쟁률</th><th class="num">일반</th><th class="num">지역우수자</th><th class="num">사회통합</th></tr></thead>
+      <tbody>
+        <tr><th>2026</th><td class="num">401명</td><td class="num">2.01 : 1</td><td class="num">2.20 : 1</td><td class="num">1.83 : 1</td><td class="num">1.60 : 1</td></tr>
+        <tr><th>2025</th><td class="num">369명</td><td class="num">1.85 : 1</td><td class="num">2.20 : 1</td><td class="num">1.43 : 1</td><td class="num">1.20 : 1</td></tr>
+        <tr><th>2024</th><td class="num">481명</td><td class="num">2.41 : 1</td><td class="num">2.56 : 1</td><td class="num">2.68 : 1</td><td class="num">1.68 : 1</td></tr>
+        <tr><th>2023</th><td class="num">456명</td><td class="num">2.28 : 1</td><td class="num">2.45 : 1</td><td class="num">2.13 : 1</td><td class="num">1.93 : 1</td></tr>
+        <tr><th>2022</th><td class="num">344명</td><td class="num">1.72 : 1</td><td class="num">2.03 : 1</td><td class="num">1.45 : 1</td><td class="num">1.08 : 1</td></tr>
+      </tbody>
+      <tfoot><tr><td>5개년 평균</td><td></td><td class="num">2.05 : 1</td><td class="num">2.29 : 1</td><td class="num">1.90 : 1</td><td class="num">1.50 : 1</td></tr></tfoot>
+    </table>
+  </div>
+
+  <div class="bars" role="group" aria-label="전형별 경쟁률 추이 막대 (최대 3.0 기준)">
+    <div class="bar-year"><span class="y">2026</span><div>
+      <div class="rbar"><span>일반</span><div class="track"><div class="fill" style="--w:73.3%"></div></div><span class="val">2.20</span></div>
+      <div class="rbar b"><span>지역우수자</span><div class="track"><div class="fill" style="--w:61%"></div></div><span class="val">1.83</span></div>
+      <div class="rbar c"><span>사회통합</span><div class="track"><div class="fill" style="--w:53.3%"></div></div><span class="val">1.60</span></div></div></div>
+    <div class="bar-year"><span class="y">2025</span><div>
+      <div class="rbar"><span>일반</span><div class="track"><div class="fill" style="--w:73.3%"></div></div><span class="val">2.20</span></div>
+      <div class="rbar b"><span>지역우수자</span><div class="track"><div class="fill" style="--w:47.7%"></div></div><span class="val">1.43</span></div>
+      <div class="rbar c"><span>사회통합</span><div class="track"><div class="fill" style="--w:40%"></div></div><span class="val">1.20</span></div></div></div>
+    <div class="bar-year"><span class="y">2024</span><div>
+      <div class="rbar"><span>일반</span><div class="track"><div class="fill" style="--w:85.3%"></div></div><span class="val">2.56</span></div>
+      <div class="rbar b"><span>지역우수자</span><div class="track"><div class="fill" style="--w:89.3%"></div></div><span class="val">2.68</span></div>
+      <div class="rbar c"><span>사회통합</span><div class="track"><div class="fill" style="--w:56%"></div></div><span class="val">1.68</span></div></div></div>
+    <div class="bar-year"><span class="y">2023</span><div>
+      <div class="rbar"><span>일반</span><div class="track"><div class="fill" style="--w:81.7%"></div></div><span class="val">2.45</span></div>
+      <div class="rbar b"><span>지역우수자</span><div class="track"><div class="fill" style="--w:71%"></div></div><span class="val">2.13</span></div>
+      <div class="rbar c"><span>사회통합</span><div class="track"><div class="fill" style="--w:64.3%"></div></div><span class="val">1.93</span></div></div></div>
+    <div class="bar-year"><span class="y">2022</span><div>
+      <div class="rbar"><span>일반</span><div class="track"><div class="fill" style="--w:67.7%"></div></div><span class="val">2.03</span></div>
+      <div class="rbar b"><span>지역우수자</span><div class="track"><div class="fill" style="--w:48.3%"></div></div><span class="val">1.45</span></div>
+      <div class="rbar c"><span>사회통합</span><div class="track"><div class="fill" style="--w:36%"></div></div><span class="val">1.08</span></div></div></div>
+  </div>
+
+  <div class="tbl-wrap">
+    <table class="tbl">
+      <caption>표 2. 일반전형 (정원 120명) — 1단계 탈락·면접 대상은 학교 공지 기준</caption>
+      <thead><tr><th>학년도</th><th class="num">지원자</th><th class="num">경쟁률</th><th class="num">1단계 탈락</th><th class="num">탈락률</th><th class="num">2단계 실질 경쟁률 (면접 대상)</th></tr></thead>
+      <tbody>
+        <tr><th>2026</th><td class="num">264명</td><td class="num">2.20 : 1</td><td class="num">17명</td><td class="num">6.4%</td><td class="num">2.06 : 1 (247명)</td></tr>
+        <tr><th>2025</th><td class="num">264명</td><td class="num">2.20 : 1</td><td class="num">11명</td><td class="num">4.2%</td><td class="num">2.11 : 1 (253명)</td></tr>
+        <tr><th>2024</th><td class="num">307명</td><td class="num">2.56 : 1</td><td class="num">44명</td><td class="num">14.3%</td><td class="num">2.19 : 1 (263명)</td></tr>
+        <tr><th>2023</th><td class="num">294명</td><td class="num">2.45 : 1</td><td class="num">54명</td><td class="num">18.4%</td><td class="num">2.00 : 1</td></tr>
+        <tr><th>2022</th><td class="num">243명</td><td class="num">2.03 : 1</td><td class="num">3명 이하 (공지 미확인)</td><td class="num">1.2% 이하</td><td class="num">2.00 : 1 이상</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tbl-wrap">
+    <table class="tbl">
+      <caption>표 3. 화성 지역우수자전형 (정원 40명) — 1단계 탈락·면접 대상은 학교 공지 기준</caption>
+      <thead><tr><th>학년도</th><th class="num">지원자</th><th class="num">경쟁률</th><th class="num">1단계 탈락</th><th class="num">탈락률</th><th class="num">2단계 실질 경쟁률 (면접 대상)</th></tr></thead>
+      <tbody>
+        <tr><th>2026</th><td class="num">73명</td><td class="num">1.83 : 1</td><td class="num">0명 (전원 통과)</td><td class="num">0%</td><td class="num">1.83 : 1</td></tr>
+        <tr><th>2025</th><td class="num">57명</td><td class="num">1.43 : 1</td><td class="num">0명 (전원 통과)</td><td class="num">0%</td><td class="num">1.43 : 1</td></tr>
+        <tr class="hl"><th>2024</th><td class="num">107명</td><td class="num">2.68 : 1 (일반 역전)</td><td class="num">21명</td><td class="num">19.6%</td><td class="num">2.15 : 1 (86명)</td></tr>
+        <tr><th>2023</th><td class="num">85명</td><td class="num">2.13 : 1</td><td class="num">5명</td><td class="num">5.9%</td><td class="num">2.00 : 1</td></tr>
+        <tr><th>2022</th><td class="num">58명</td><td class="num">1.45 : 1</td><td class="num">0명 (전원 통과)</td><td class="num">0%</td><td class="num">1.45 : 1</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tbl-wrap">
+    <table class="tbl">
+      <caption>표 4. 사회통합전형 (정원 40명)</caption>
+      <thead><tr><th>학년도</th><th class="num">지원자</th><th class="num">경쟁률</th><th class="num">1단계 탈락</th></tr></thead>
+      <tbody>
+        <tr><th>2026</th><td class="num">64명</td><td class="num">1.60 : 1</td><td class="num">0명 (전원 통과)</td></tr>
+        <tr><th>2025</th><td class="num">48명</td><td class="num">1.20 : 1</td><td class="num">0명 (전원 통과)</td></tr>
+        <tr><th>2024</th><td class="num">67명</td><td class="num">1.68 : 1</td><td class="num">0명 (전원 통과)</td></tr>
+        <tr><th>2023</th><td class="num">77명</td><td class="num">1.93 : 1</td><td class="num">0명 (전원 통과)</td></tr>
+        <tr><th>2022</th><td class="num">43명</td><td class="num">1.08 : 1</td><td class="num">0명 (전원 통과)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <span class="ttl">표를 읽는 법</span>
+    <ul>
+      <li><strong>일반전형의 면접 경쟁률은 2.0 ~ 2.2 : 1 수준입니다.</strong> 1단계에서 정원의 2배수(일반 240명)를 기준으로 자르되 합격선 동점자를 모두 포함하기 때문입니다. 2024~2026학년도에는 동점자 처리를 8순위까지 적용하고도 동점이 남아 면접 대상이 263명, 253명, 247명이었습니다.</li>
+      <li><strong>지역우수자전형은 지원자가 80명(2배수) 이하이면 전원이 1단계를 통과</strong>하고, 이때 면접 경쟁률은 지원 경쟁률과 같습니다. 2022·2025·2026학년도가 이 경우입니다.</li>
+      <li><strong>지역우수자 지원자가 80명을 넘으면 1단계 컷이 생깁니다.</strong> 2023학년도 85명(5명 탈락), 2024학년도 107명(21명 탈락)이 그 예입니다. 2024학년도에는 지역우수자 경쟁률(2.68)이 일반(2.56)보다 높았습니다.</li>
+      <li>5개년 중 4개년은 지역우수자 경쟁률이 일반보다 낮았지만, 매년 같다는 보장은 없습니다. 접수 마감 직전 현황으로 다시 비교하세요.</li>
+    </ul>
+  </div>
+
+  <h3><span class="sec">1.5</span>교육과정과 특색 프로그램 사전</h3>
+  <div class="tbl-wrap">
+    <table class="tbl">
+      <thead><tr><th>항목</th><th>내용</th></tr></thead>
+      <tbody>
+        <tr><th>IB 월드스쿨 인증</th><td>2025년 11월 IB 월드스쿨 인증을 받은 것으로 알려져 있으며(2차 자료), 희망자는 Pre-DP 과정을 거쳐 IB 디플로마(DP)를 이수할 수 있습니다. 본과정 시작 시점과 선발 방식은 학교 공지(예: IB Pre-DP과정 이수 희망 학생 선발 안내)로 확인하세요.</td></tr>
+        <tr><th>3트랙 교육과정 (미확인)</th><td>① 일반 국제고 디플로마 트랙(국제정치·국제경제·국제법·세계문제와 미래사회 등 전문교과 심화) ② Honors 디플로마 트랙 ③ IB DP 트랙</td></tr>
+        <tr><th>DGP (미확인)</th><td>동탄글로벌프로젝트. 학제간 융합 심화 연구와 소논문·발표</td></tr>
+        <tr><th>DGW (미확인)</th><td>동탄글로벌위크. 국제 문화·학술 주간</td></tr>
+        <tr><th>다독다독 (미확인)</th><td>인문고전·원서 독서토론 프로그램</td></tr>
+        <tr><th>모의유엔(MUN)</th><td>국제기구 회의를 모의하는 토론·협상 활동</td></tr>
+        <tr><th>무감독 양심시험</th><td>감독 교사 없이 치르는 학교 전통. 면접 인성 질문의 소재가 되기도 합니다.</td></tr>
+        <tr><th>대입 환경</th><td>2026학년도 대입에서 서울대 합격자 17명(수시 16명, 정시 1명, 최초합격 기준이며 정시 추가합격을 포함해 18명으로 보도되기도 함). 2027학년도 신입생은 2028 대입 개편(고교학점제, 내신 5등급제: 1등급 10%, 2등급 누적 34%)이 적용되어 9등급제보다 내신 부담이 줄어듭니다.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="tbl-note">경쟁률은 반올림 방식에 따라 학교 공지와 소수 둘째 자리가 다를 수 있습니다(예: 2026 지역우수자 73÷40=1.825, 학교 공지는 1.82). 표시가 (미확인)인 항목은 학교 공식 자료로 확인하지 못한 내용이며, 대입 실적과 교육과정은 학교알리미·대입정보포털 어디가의 최신 공시로 다시 확인하세요.</p>
+</section>
+
+<!-- ===================== PART 2 ===================== -->
+<section class="sheet is-hidden" id="sec-part2" aria-labelledby="h-part2">
+  <p class="part-no">Part 02</p>
+  <h2 id="h-part2">1단계 산출 방식과 전형 선택 시뮬레이터</h2>
+  <p class="lede">1단계는 영어 내신과 출결 감점만으로 점수가 결정됩니다. 국어·사회는 점수에는 들어가지 않지만, 2배수 경계에서 동점이 생겼을 때 순위를 가르는 기준이 됩니다.</p>
+
+  <h3><span class="sec">2.1</span>1단계 점수 산출 공식</h3>
+  <div class="note">
+    <p><strong>1단계 총점(160점 만점) = 중2·3 영어 환산점수(4개 학기, 160점) − 출결 감점</strong></p>
+    <p style="margin-bottom:0">영어 성취도는 2학년 1·2학기, 3학년 1·2학기 네 학기가 같은 배점으로 들어갑니다.</p>
+  </div>
+  <div class="tbl-wrap">
+    <table class="tbl" style="max-width:520px">
+      <caption>영어 성취도 환산표 (학기당)</caption>
+      <thead><tr><th>성취도</th><th class="num">A</th><th class="num">B</th><th class="num">C</th><th class="num">D</th><th class="num">E</th></tr></thead>
+      <tbody><tr><th>환산점수</th><td class="num">40</td><td class="num">36</td><td class="num">32</td><td class="num">28</td><td class="num">24</td></tr></tbody>
+    </table>
+  </div>
+  <p>영어 B가 한 학기만 있어도 환산점수는 156점이 됩니다.</p>
+
+  <h4>출결 감점</h4>
+  <ul>
+    <li>대상은 중1~중3의 <strong>미인정</strong> 결석·지각·조퇴·결과이며, 2026. 11. 30.까지 반영합니다.</li>
+    <li>미인정 결석 1일당 0.1점을 감점하고, 최대 감점은 0.5점입니다(5일 이상은 동일).</li>
+    <li>미인정 지각·조퇴·결과는 합산해 3회를 미인정 결석 1일로 환산합니다. 3으로 나눈 나머지(1~2회)는 버립니다.</li>
+    <li>질병·기타·출석인정 결석·지각·조퇴·결과는 감점하지 않습니다.</li>
+  </ul>
+  <p style="padding-left:1.3em">환산 미인정 결석일수 = 미인정 결석일수 + ⌊(미인정 지각 + 조퇴 + 결과) ÷ 3⌋<br>출결 감점 = min(0.5, 환산 미인정 결석일수 × 0.1)</p>
+
+  <h3><span class="sec">2.2</span>1단계 동점자 처리 우선순위</h3>
+  <p>2배수 커트라인에서 동점자가 나오면 아래 순서대로 비교해 먼저 앞서는 사람이 선발됩니다.</p>
+  <div class="tbl-wrap">
+    <table class="tbl" style="max-width:560px">
+      <thead><tr><th>순위</th><th>비교 항목</th></tr></thead>
+      <tbody>
+        <tr><th>1</th><td>3학년 2학기 국어 성취도</td></tr>
+        <tr><th>2</th><td>3학년 2학기 사회(또는 역사) 성취도</td></tr>
+        <tr><th>3</th><td>3학년 1학기 국어 성취도</td></tr>
+        <tr><th>4</th><td>3학년 1학기 사회(또는 역사) 성취도</td></tr>
+        <tr><th>5</th><td>2학년 2학기 국어 성취도</td></tr>
+        <tr><th>6</th><td>2학년 2학기 사회(또는 역사) 성취도</td></tr>
+        <tr><th>7</th><td>2학년 1학기 국어 성취도</td></tr>
+        <tr><th>8</th><td>2학년 1학기 사회(또는 역사) 성취도</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="tbl-note">2026학년도 일반전형은 1단계 합격선이 160점(만점)이었고 동점자 처리를 2학년 1학기 사회(8순위)까지 적용했으며 면접 대상은 247명이었습니다(학교 공지). 같은 학기에 사회와 역사를 함께 이수했다면 두 과목 중 성취도가 높은 한 과목만 반영합니다. 2단계 최종 동점자는 면접 총점(40점), 면접 중 자기주도학습 영역(25점), 1단계 영어 환산점수 합, 국어·사회 성취도 순으로 비교합니다.</p>
+
+  <h3><span class="sec">2.3</span>1단계 내신·출결·동점자 통합 시뮬레이터</h3>
+  <div class="panel no-split" id="sim">
+    <p class="ttl">성취도와 출결을 입력하세요</p>
+
+    <div class="btn-row no-print" style="margin:0 0 14px">
+      <span class="hint">샘플 불러오기:</span>
+      <button type="button" class="btn" data-sample="A">Case A 예시</button>
+      <button type="button" class="btn" data-sample="B">Case B 예시</button>
+      <button type="button" class="btn" data-sample="C">Case C 예시</button>
+      <button type="button" class="btn" data-sample="D">Case D 예시</button>
+      <button type="button" class="btn ghost" id="sim-reset">초기화</button>
+    </div>
+
+    <h4 style="margin-top:6px">입력 1. 영어 성취도 (4개 학기)</h4>
+    <div class="grid2" id="sim-eng"></div>
+
+    <h4>입력 2. 미인정 출결 (중1~중3, 11. 30. 기준)</h4>
+    <div class="grid2">
+      <div class="field"><label for="sim-abs">미인정 결석 일수</label><input type="number" id="sim-abs" min="0" max="999" step="1" value="0" inputmode="numeric"></div>
+      <div class="field"><label for="sim-late">미인정 지각·조퇴·결과 합산 횟수</label><input type="number" id="sim-late" min="0" max="999" step="1" value="0" inputmode="numeric"></div>
+    </div>
+
+    <h4>입력 3. 국어·사회 성취도 (동점자 처리 1~8순위)</h4>
+    <div class="tbl-wrap">
+      <table class="tbl" id="sim-subj-table">
+        <thead><tr><th>순위</th><th>학기</th><th>과목</th><th>성취도</th><th>판독</th></tr></thead>
+        <tbody id="sim-subj"></tbody>
+      </table>
+    </div>
+
+    <div class="sim-result" id="sim-out" aria-live="polite"></div>
+  </div>
+
+  <h3><span class="sec">2.4</span>내신 케이스별 전형 선택 매트릭스</h3>
+  <div class="tbl-wrap">
+    <table class="tbl wide">
+      <thead><tr><th>케이스</th><th>조건</th><th>1단계 점수</th><th>권장 방향</th></tr></thead>
+      <tbody>
+        <tr><th>Case A</th><td>영어 전 학기 A, 미인정 출결 없음, 국어·사회 8개 과목 전부 A</td><td class="num">160.0</td><td>일반전형 1단계에서 가장 앞선 위치(동점자 처리에서 불리한 순위 없음). 면접 경쟁률이 낮을 가능성이 큰 지역우수자를 우선 검토하되 마감일 경쟁률로 확정</td></tr>
+        <tr><th>Case B</th><td>160점이고, 2학년(5~8순위) 국어·사회에서 처음 B가 나타남 (3학년 1~4순위는 모두 A)</td><td class="num">160.0</td><td>일반전형도 가능성은 있으나 합격선이 160점(만점)이라 5~8순위 국·사 성취도에 따라 갈릴 수 있음. 안전 확보를 위해 지역우수자 권장</td></tr>
+        <tr><th>Case C</th><td>160점이지만, 3학년(1~4순위) 국어·사회에서 처음 B가 나타남</td><td class="num">160.0</td><td>합격선이 160점인 해에는 동점자 컷에서 가장 먼저 밀릴 수 있어 지역우수자 지원을 강력 권고</td></tr>
+        <tr><th>Case D</th><td>영어 B 이하가 있어 156점 이하이거나, 미인정 출결 감점이 있음</td><td class="num">160 미만</td><td>2026학년도처럼 합격선이 160점이면 일반전형 1단계 통과가 어려움. 지역우수자(자격 해당 시 사회통합) 선택을 사실상 필수로 보고 접수 현황 확인</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3><span class="sec">2.5</span>전형 선택 순서</h3>
+  <ol>
+    <li>사회통합전형 자격(기회균등·사회다양성) 해당 여부를 먼저 확인합니다. 해당하지 않으면 일반과 지역우수자 둘 중에서 고릅니다.</li>
+    <li>위 시뮬레이터로 Case를 확인합니다. Case C·D라면 지역우수자 쪽으로 기웁니다.</li>
+    <li>12월 4일 이후 접수 현황으로 두 전형의 경쟁률을 비교합니다. 접수 현황 실시간 공개 여부는 접수 대행처에서 확인하세요.</li>
+    <li>12월 10일 17:00 마감 전에 확정하고, 출력물 제출 방법(방문·등기)까지 마칩니다.</li>
+  </ol>
+  <div class="note caution"><span class="ttl">판독의 한계</span>시뮬레이터는 최근 5개년 통계와 요강의 동점자 규정으로 위험 신호를 읽어주는 참고 도구입니다. 실제 합격 컷은 그 해 지원자 분포에 따라 달라지므로 합격 가능성을 보장하거나 단정하지 않습니다.</div>
+</section>
+
+<!-- ===================== PART 3 ===================== -->
+<section class="sheet is-hidden" id="sec-part3" aria-labelledby="h-part3">
+  <p class="part-no">Part 03</p>
+  <h2 id="h-part3">자기소개서 설계와 글자 수·금지어 점검기</h2>
+  <p class="lede">자기소개서는 12월 15~16일 이틀 동안 온라인으로 입력합니다. 글을 쓰는 시간이 아니라 점검하고 옮기는 시간으로 쓰려면, 11월 안에 초안을 끝내야 합니다.</p>
+
+  <h3><span class="sec">3.1</span>문항 구조와 배점</h3>
+  <div class="tbl-wrap">
+    <table class="tbl wide">
+      <caption>자기소개서 (총 40점, 띄어쓰기 제외 1,500자 이내 통합)</caption>
+      <thead><tr><th>평가 영역</th><th>문항</th><th class="num">배점</th><th class="num">권장 분량</th></tr></thead>
+      <tbody>
+        <tr><th rowspan="2">자기주도학습 영역</th><td>① 지원동기 및 진로계획</td><td class="num" rowspan="2">25점</td><td class="num">600자 내외</td></tr>
+        <tr><td>② 자기주도학습 과정</td><td class="num">600자 내외</td></tr>
+        <tr><th>인성 영역</th><td>③ 배려·나눔·협력·타인존중·규칙준수 등 핵심인성요소 경험과 배우고 느낀 점</td><td class="num">15점</td><td class="num">300자 내외</td></tr>
+      </tbody>
+      <tfoot><tr><td colspan="2">합계 (문항별 글자 수 제한이 아니라 1,500자 통합 제한)</td><td class="num">40점</td><td class="num">1,500자</td></tr></tfoot>
+    </table>
+  </div>
+
+  <h3><span class="sec">3.2</span>고입용 생활기록부로 면접관에게 가는 것</h3>
+  <div class="tbl-wrap">
+    <table class="tbl">
+      <thead><tr><th style="width:50%">면접관에게 제공됨</th><th>자동으로 제외됨</th></tr></thead>
+      <tbody><tr>
+        <td>창의적 체험활동(자율·동아리·진로 특기사항), 독서활동상황(도서명·저자), 1·2학년 행동특성 및 종합의견</td>
+        <td>수상경력(4번), 교과학습발달상황의 세부능력 및 특기사항(세특), 중3 행동특성 및 종합의견</td>
+      </tr></tbody>
+    </table>
+  </div>
+  <div class="note"><span class="ttl">전략적 의미</span>수업 시간에 한 심화 탐구는 세특에 적혀 있어도 면접관이 볼 수 없습니다. 그 내용은 반드시 자기소개서 본문에 직접 서술해야 합니다. 반대로 독서활동상황(도서명·저자)과 창의적 체험활동 기록은 면접관이 보므로, 진로와 이어지는 책을 11월 마감 전에 정리해 등재하세요(기록 마감 시점은 담임 확인).</div>
+
+  <h3><span class="sec">3.3</span>기재 금지 사항</h3>
+  <div class="tbl-wrap">
+    <table class="tbl">
+      <thead><tr><th style="width:22%">처리</th><th>해당 내용</th></tr></thead>
+      <tbody>
+        <tr><th style="color:var(--wine)">면접 0점</th><td>영어 등 공인어학성적(TOEIC, TOEFL, TEPS, HSK, JLPT 등)의 점수·급수·응시 사실 일체, 교과 관련 교외 경시대회 입상 실적, 영재교육원 교육·수료 여부 등 사교육을 유발하는 요소</td></tr>
+        <tr><th style="color:var(--amber)">해당 항목 배점의 10% 이상 감점</th><td>인증시험 참여 사실, 교내·외 각종 대회 수상 실적(교내 상장 포함), 교과 성적 점수·석차·백분위를 짐작하게 하는 표현, 부모·친인척의 사회·경제적 지위(직업명·직장명·직위 등)를 짐작하게 하는 표현, 지원자 본인의 성명·출신 중학교명 등 인적사항</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>수상이나 성적을 돌려서 쓰는 표현(예: '인정받았다', '상위권')도 같은 취지로 감점될 수 있습니다. 실적을 나열하기보다 '무엇을 궁금해했고 어떻게 알아냈는지'를 쓰는 편이 안전합니다.</p>
+
+  <h3><span class="sec">3.4</span>문항별 설계 틀</h3>
+  <div class="tbl-wrap">
+    <table class="tbl wide">
+      <thead><tr><th>문항</th><th>흐름</th><th>유의할 점</th></tr></thead>
+      <tbody>
+        <tr><th>① 지원동기·진로</th><td>계기 → 탐구 → 입학 후 계획 → 진로</td><td>'국제고에 가고 싶다'가 아니라 '이 학교의 어떤 교육과정으로 내 질문을 풀겠다'까지 연결</td></tr>
+        <tr><th>② 자기주도학습</th><td>문제의식 → 방법 → 막힘과 수정 → 결과</td><td>점수·석차 대신 '이해가 달라진 지점'을 서술. 세특이 보이지 않으므로 탐구 과정을 여기에 직접 적기</td></tr>
+        <tr><th>③ 인성</th><td>상황 → 내 행동 → 배운 점 → 이후 실천</td><td>300자이므로 하나의 사례와 하나의 교훈만. 미담 나열은 피하기</td></tr>
+        <tr><th>공통</th><td>면접 질문이 될 문장 1~2개 심어두기</td><td>독서·탐구 주제를 구체적으로 적어 두면 면접에서 그대로 질문으로 돌아옴. 면접에서 답할 수 있는 내용만 쓰기</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3><span class="sec">3.5</span>예시 원고 (구조 참고용 가상 사례)</h3>
+  <div class="note caution"><span class="ttl">사용 안내</span>아래 원고는 화성시 거주 학생을 가정해 구조를 보여주기 위해 만든 가상의 예시이며, 실제 합격 원고가 아닙니다. 문장을 그대로 쓰지 말고 본인의 경험과 언어로 바꿔야 하며, 면접에서 본인이 설명하지 못하는 내용은 쓰면 안 됩니다.</div>
+
+  <div class="essay">
+    <h4><span>① 지원동기 및 진로계획</span><span class="count">공백 제외 <b class="js-count" data-of="essay-1"></b>자</span></h4>
+    <p id="essay-1">제가 사는 화성시는 산업단지가 많아 여러 나라에서 온 이웃과 함께 살아가는 도시입니다. 등굣길 버스에서 서로 다른 언어가 오가는 풍경을 매일 보며 지역의 일상이 곧 세계와 이어져 있다는 생각을 했고, 이 생각은 '한 도시의 변화는 국제 문제와 어떻게 연결되는가'라는 질문이 되었습니다. 중학교 2학년 사회 시간에 이 질문으로 탐구를 시작해 우리 지역의 외국인 주민 통계와 다문화 지원 정책을 비교했습니다. 숫자는 규모를 보여 주었지만 이웃이 겪는 어려움은 알려 주지 못했습니다. 그래서 지역 도서관의 한국어 학습 보조 봉사에 참여해 또래 친구들과 대화하며, 언어 장벽이 학업과 정착에 미치는 영향을 직접 확인했습니다. 한 친구는 수업 내용을 이해하고도 발표가 두려워 손을 들지 못한다고 말했고, 저는 제도가 있어도 사람이 닿지 못하는 틈이 있음을 알게 되었습니다. 이후 국제개발협력과 이주 문제를 다룬 책을 읽으며 한 나라의 정책이 다른 나라 사람들의 삶을 바꾸는 과정에 흥미를 느꼈고, 책의 주장과 우리 지역의 현실이 맞는 부분과 어긋나는 부분을 표로 비교해 보았습니다. 동탄국제고에서는 국제정치와 국제경제 전문교과로 이 문제를 이론과 사례로 깊이 배우고, DGP에서 지역과 세계를 잇는 주제를 소논문으로 완성하고 싶습니다. 또한 모의유엔 활동으로 서로 다른 입장을 조율하는 협상 경험을 쌓겠습니다. 장기적으로는 국제기구에서 지역사회와 국제사회를 잇는 정책을 설계하는 사람이 되어, 이웃이 어디서든 존엄하게 살 수 있는 제도를 만드는 데 기여하겠습니다.</p>
+  </div>
+  <div class="essay">
+    <h4><span>② 자기주도학습 과정</span><span class="count">공백 제외 <b class="js-count" data-of="essay-2"></b>자</span></h4>
+    <p id="essay-2">저의 공부 방식은 질문 만들기, 자료 찾기, 설명하기의 순환입니다. 특히 사회 과목에서 개념을 외우기보다 '왜 이런 제도가 생겼는가'를 먼저 묻고 답을 찾는 방식으로 공부했습니다. 환경 단원에서 탄소국경조정제도를 접하고 의문이 생겨, 신문 사설과 정부 보도자료를 비교해 읽으며 찬반 논리를 표로 정리했습니다. 처음에는 용어가 낯설어 막혔지만, 모르는 개념을 노트 왼쪽에 적고 오른쪽에 제 말로 풀어 쓰는 습관으로 하나씩 이해했습니다. 이해한 내용은 가족에게 5분 동안 설명해 보았고, 설명이 막히는 지점이 곧 제가 모르는 부분이라는 사실을 알게 되었습니다. 그 지점을 표시해 두었다가 관련 자료를 다시 찾아 읽고, 일주일 뒤 같은 내용을 다시 설명해 보며 이해가 달라졌는지 확인했습니다. 영어는 같은 주제의 영문 기사를 하루 한 편 읽고 핵심 문장을 한 줄로 요약하며 사회 공부와 연결했습니다. 처음에는 한 편에 오래 걸렸지만 모르는 단어를 주제별로 모아 반복해 읽자 점차 속도가 붙었습니다. 틀린 문제는 정답을 확인하는 데서 끝내지 않고 왜 그 선택지를 골랐는지 생각의 순서를 적어 실수의 원인을 유형별로 분류했습니다. 시험 기간에는 주 단위 계획을 세우고 매주 일요일에 달성 여부를 점검해 다음 주 계획에 반영했습니다. 계획이 자주 어긋나던 시기에는 하루 분량을 줄이고 우선순위를 정하는 방식으로 고쳤습니다. 이런 과정을 통해 결과보다 이해의 깊이를 스스로 점검하는 힘이 생겼습니다. 기숙사 생활에서도 같은 방법으로 시간을 관리하며 자율적으로 학습하겠습니다.</p>
+  </div>
+  <div class="essay">
+    <h4><span>③ 인성 (배려·협력·타인존중)</span><span class="count">공백 제외 <b class="js-count" data-of="essay-3"></b>자</span></h4>
+    <p id="essay-3">학급 모둠 활동에서 의견이 갈려 진행이 멈춘 적이 있습니다. 저는 먼저 각자의 의견을 포스트잇에 적어 한눈에 비교하자고 제안했고, 반대 의견도 끝까지 듣고 요약해 확인했습니다. 제 의견이 채택되지 않아 서운했지만 그 감정을 잠시 내려놓았습니다. 서로의 이유를 이해하자 두 의견의 장점을 합친 방안이 나왔고, 발표 준비도 예정보다 하루 먼저 끝났습니다. 이 경험으로 협력은 내 의견을 관철하는 것이 아니라 상대의 입장을 정확히 이해하는 데서 시작된다는 것을 배웠습니다. 이후 도서관 봉사에서도 한국어가 서툰 친구의 말을 끝까지 기다리고, 알아듣기 쉬운 말로 바꿔 다시 설명하는 태도를 실천하고 있습니다. 규칙을 지키는 일 또한 서로를 배려하는 약속이라고 생각해 학급 규칙부터 먼저 지키려 노력합니다.</p>
+  </div>
+  <div class="btn-row no-print" style="margin-bottom:6px">
+    <button type="button" class="btn primary" data-load="all">예시 원고 전체를 점검기에 불러오기</button>
+    <button type="button" class="btn" data-load="essay-1">① 만 불러오기</button>
+    <button type="button" class="btn" data-load="essay-2">② 만 불러오기</button>
+    <button type="button" class="btn" data-load="essay-3">③ 만 불러오기</button>
+  </div>
+
+  <h3><span class="sec">3.6</span>글자 수(공백 제외)와 금지어 점검기</h3>
+  <div class="panel no-split" id="checker">
+    <div class="grid2">
+      <div class="field">
+        <label for="chk-mode">점검할 문항</label>
+        <select id="chk-mode">
+          <option value="1500">통합 1,500자</option>
+          <option value="600-1">① 지원동기·진로 600자</option>
+          <option value="600-2">② 자기주도학습 600자</option>
+          <option value="300">③ 인성 300자</option>
+        </select>
+      </div>
+      <div class="field"><span class="lab">현재 글자 수</span>
+        <div class="counts" id="chk-counts" aria-live="polite"></div>
+      </div>
+    </div>
+    <div class="meter" id="chk-meter" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="글자 수 한도 대비 진행률"><div id="chk-fill"></div></div>
+    <div class="field" style="margin-top:10px">
+      <label for="chk-text">자기소개서 초안을 붙여 넣으세요 (이 페이지 안에서만 계산하며 서버로 전송하지 않습니다)</label>
+      <textarea id="chk-text" rows="10" spellcheck="false"></textarea>
+    </div>
+    <div class="btn-row no-print"><button type="button" class="btn ghost" id="chk-clear">비우기</button></div>
+    <div class="warn-list" id="chk-warn" aria-live="polite"></div>
+    <p class="hint" style="margin-top:10px">검출어는 문맥과 상관없이 단어가 들어 있으면 표시합니다. 수상·성적과 관계없는 일반 표현(예: '관찰 대상')이면 무시해도 됩니다. 이 점검기가 놓치는 우회 표현도 있으므로 마지막에는 사람이 직접 읽어 확인하세요.</p>
+  </div>
+</section>
+
+<!-- ===================== PART 4 ===================== -->
+<section class="sheet is-hidden" id="sec-part4" aria-labelledby="h-part4">
+  <p class="part-no">Part 04</p>
+  <h2 id="h-part4">2단계 심층면접과 PREP 워크시트</h2>
+  <p class="lede">면접은 40점이며, 자기소개서와 고입용 생활기록부(창의적 체험활동·독서활동)에 적힌 내용이 질문의 출발점이 됩니다. 쓴 것을 말로 풀 수 있는지가 핵심입니다.</p>
+
+  <h3><span class="sec">4.1</span>면접 평가 구조</h3>
+  <div class="tbl-wrap">
+    <table class="tbl" style="max-width:640px">
+      <thead><tr><th>구분</th><th class="num">배점</th><th>비고</th></tr></thead>
+      <tbody>
+        <tr><th>자기주도학습 영역</th><td class="num">25점</td><td>최종 동점자 2순위 기준</td></tr>
+        <tr><th>인성 영역</th><td class="num">15점</td><td></td></tr>
+      </tbody>
+      <tfoot><tr><td>면접 합계</td><td class="num">40점</td><td>1단계 160점과 합산해 200점 만점으로 사정</td></tr></tfoot>
+    </table>
+  </div>
+  <p class="tbl-note">면접의 진행 방식과 시간은 이 매뉴얼의 근거 자료에 없으므로, 12월 중 공지되는 면접 안내문을 반드시 확인하세요.</p>
+
+  <h3><span class="sec">4.2</span>예상 질문 15선</h3>
+  <div class="note caution"><span class="ttl">출처 안내</span>아래 질문은 학교의 공식 기출이 아니라, 평가 영역과 학교 특성에 맞춰 만든 연습용 예상 질문입니다.</div>
+  <div class="tbl-wrap">
+    <table class="tbl wide">
+      <thead><tr><th class="num">번호</th><th>영역</th><th>질문</th><th>면접관이 보는 것</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><th>지원동기·진로</th><td>외고나 일반고가 아니라 국제고를 선택한 이유는 무엇인가요?</td><td>학교 이해도, 선택의 일관성</td></tr>
+        <tr><td class="num">2</td><th>지원동기·진로</th><td>자기소개서에 쓴 진로를 위해 입학 후 3년 동안 무엇을 어떻게 하겠습니까?</td><td>구체성, 교육과정 이해</td></tr>
+        <tr><td class="num">3</td><th>지원동기·진로</th><td>가장 관심 있는 국제 문제 하나를 골라 우리 지역의 일상과 연결해 설명해 보세요.</td><td>사고의 확장력</td></tr>
+        <tr><td class="num">4</td><th>자기주도학습</th><td>가장 깊이 파고든 탐구 주제의 출발 질문은 무엇이었고, 탐구하면서 생각이 바뀐 부분이 있나요?</td><td>탐구의 진정성과 유연성</td></tr>
+        <tr><td class="num">5</td><th>자기주도학습</th><td>계획대로 되지 않았던 경험과 그 뒤에 계획을 어떻게 고쳤는지 말해 보세요.</td><td>자기 점검과 수정 능력</td></tr>
+        <tr><td class="num">6</td><th>자기주도학습</th><td>혼자서 모르는 개념을 해결한 과정을 구체적인 순서대로 설명해 보세요.</td><td>학습 방법의 실제성</td></tr>
+        <tr><td class="num">7</td><th>자기주도학습</th><td>기숙사에서 자율학습 시간을 어떻게 운영할 생각인가요?</td><td>자기관리, 생활 적응</td></tr>
+        <tr><td class="num">8</td><th>독서·시사</th><td>독서활동에 적힌 책 중 한 권의 핵심 주장을 설명하고, 그 주장에 대한 비판을 하나 들어 보세요.</td><td>비판적 읽기</td></tr>
+        <tr><td class="num">9</td><th>독서·시사</th><td>최근 관심 있게 본 국제 뉴스 하나와 그에 대한 본인의 입장을 말해 보세요.</td><td>시사 관심, 입장 구성</td></tr>
+        <tr><td class="num">10</td><th>독서·시사</th><td>한 나라의 이익과 국제사회의 공동 이익이 충돌할 때(예: 탄소 배출 규제) 어떻게 판단해야 한다고 생각하나요?</td><td>가치 판단, 논리 전개</td></tr>
+        <tr><td class="num">11</td><th>독서·시사</th><td>인공지능 번역이 발전하면 외국어를 배울 필요가 줄어들까요?</td><td>찬반 구조화</td></tr>
+        <tr><td class="num">12</td><th>인성·갈등</th><td>모둠 활동에서 의견이 갈렸던 경험과 그때 본인의 역할을 말해 보세요.</td><td>협력, 조율</td></tr>
+        <tr><td class="num">13</td><th>인성·갈등</th><td>규칙이 불합리하다고 느껴질 때, 지켜야 할까요 바꾸어야 할까요?</td><td>규칙 준수와 비판의식의 균형</td></tr>
+        <tr><td class="num">14</td><th>인성·갈등</th><td>감독 없는 시험에서 친한 친구가 부정행위를 하는 것을 보았다면 어떻게 하겠습니까?</td><td>정직, 관계와 원칙의 갈등</td></tr>
+        <tr><td class="num">15</td><th>인성·갈등</th><td>기숙사 룸메이트와 생활 습관이 크게 다르다면 어떻게 조율하겠습니까?</td><td>배려, 의사 표현</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3><span class="sec">4.3</span>PREP 답변 구조 (90초)</h3>
+  <div class="tbl-wrap">
+    <table class="tbl">
+      <thead><tr><th>단계</th><th>이름</th><th class="num">권장 시간</th><th>내용</th></tr></thead>
+      <tbody>
+        <tr><th>P</th><td>Point · 주장</td><td class="num">15초</td><td>질문에 대한 결론을 한 문장으로 먼저 말하기</td></tr>
+        <tr><th>R</th><td>Reason · 이유</td><td class="num">25초</td><td>그렇게 판단한 핵심 이유 한두 가지</td></tr>
+        <tr><th>E</th><td>Example · 근거·사례</td><td class="num">30초</td><td>내 경험이나 구체적 사례로 이유를 뒷받침</td></tr>
+        <tr><th>P</th><td>Point · 재강조</td><td class="num">20초</td><td>결론을 다시 말하고, 입학 후 연결을 덧붙이기</td></tr>
+      </tbody>
+      <tfoot><tr><td colspan="2">합계</td><td class="num">90초</td><td></td></tr></tfoot>
+    </table>
+  </div>
+
+  <h3><span class="sec">4.4</span>90초 실전 타이머</h3>
+  <div class="panel no-split" id="timer">
+    <div class="timer-box">
+      <div>
+        <div class="timer-clock" id="tm-clock" role="timer" aria-label="남은 시간">01:30</div>
+        <div class="btn-row timer-ctl" style="margin-top:10px">
+          <button type="button" class="btn primary" id="tm-start">시작</button>
+          <button type="button" class="btn" id="tm-pause" disabled>일시정지</button>
+          <button type="button" class="btn ghost" id="tm-reset">초기화</button>
+        </div>
+      </div>
+      <div>
+        <p class="timer-phase" id="tm-phase">준비 (시작을 누르면 P 구간부터 진행됩니다)</p>
+        <div class="segs" id="tm-segs" aria-hidden="true">
+          <div class="seg" style="flex:15"><div class="fillbar"></div><span>P<br>주장 15초</span></div>
+          <div class="seg" style="flex:25"><div class="fillbar"></div><span>R<br>이유 25초</span></div>
+          <div class="seg" style="flex:30"><div class="fillbar"></div><span>E<br>사례 30초</span></div>
+          <div class="seg" style="flex:20"><div class="fillbar"></div><span>P<br>재강조 20초</span></div>
+        </div>
+        <p class="hint" style="margin-top:8px" id="tm-status" aria-live="polite">질문 하나를 정해 소리 내어 답해 보세요. 90초가 지나면 종료됩니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3><span class="sec">4.5</span>PREP 스크립트 워크시트</h3>
+  <p>탐구 검증, 진로 연계, 인성 갈등 세 유형의 질문을 직접 정하고 PREP 순서로 답을 적어 보세요. 입력한 내용은 이 브라우저에 자동 저장되고, 인쇄하면 함께 출력됩니다.</p>
+  <div id="ws-root"></div>
+  <div class="btn-row no-print"><button type="button" class="btn ghost" id="ws-clear">워크시트 전체 지우기</button></div>
+</section>
+
+<!-- ===================== PART 5 ===================== -->
+<section class="sheet is-hidden" id="sec-part5" aria-labelledby="h-part5">
+  <p class="part-no">Part 05</p>
+  <h2 id="h-part5">일정 · 행정 · 기숙사</h2>
+  <p class="lede">원서접수까지 남은 기간 동안 해야 할 일과 학부모가 챙길 행정 절차, 기숙사 생활을 정리했습니다. 체크 상태는 이 브라우저에 저장됩니다.</p>
+
+  <h3><span class="sec">5.1</span>D-Day와 준비 진행률</h3>
+  <div class="panel no-split" id="dday-panel">
+    <p class="ttl" style="margin-bottom:4px">1단계 원서접수 개시까지 <span id="dday-inline">-</span></p>
+    <p class="hint" id="dday-inline-next" style="margin:0 0 10px"></p>
+    <div class="prog">
+      <div class="meter" id="ck-meter" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="준비 달성률"><div id="ck-fill"></div></div>
+      <b id="ck-pct">0%</b>
+    </div>
+    <p class="hint" id="ck-count" style="margin:0"></p>
+    <div id="ck-root"></div>
+    <div class="btn-row no-print"><button type="button" class="btn ghost" id="ck-reset">체크 모두 해제</button></div>
+  </div>
+
+  <h3><span class="sec">5.2</span>학부모용 1단계 제출 서류 안내</h3>
+  <div class="note warn"><span class="ttl">서류 목록은 원문 대조 필수</span>제출 서류의 종류와 발급 방법은 해마다 바뀔 수 있고 이 매뉴얼은 요강 원문의 개별 서류 목록을 담고 있지 않습니다. 반드시 학교 공고문의 서류 목록과 하나씩 대조하세요.</div>
+  <div class="tbl-wrap">
+    <table class="tbl">
+      <thead><tr><th>구분</th><th>확인할 내용</th></tr></thead>
+      <tbody>
+        <tr><th>제출 방식</th><td>온라인 접수 후 출력물을 본교 방문 또는 등기우편으로 제출합니다. 마감은 12. 10.(목) 17:00이며 도착분만 인정되므로, 등기는 마감 며칠 전에는 발송하는 편이 안전합니다.</td></tr>
+        <tr><th>지역우수자 자격</th><td>2026. 3. 3. 이전부터 화성시 소재 중학교에 재학했다는 사실을 학교가 확인해 주는 방식과 필요 서류를 요강에서 확인합니다. 학군 배정으로 타 시 학교에 다니는 경우는 해당 증빙이 별도로 필요한지 확인합니다.</td></tr>
+        <tr><th>사회통합 증빙</th><td>해당하는 경우에 한해, 요강이 정한 증빙 서류를 정부24(주민등록등본 등)나 관련 기관에서 발급합니다.</td></tr>
+        <tr><th>출결 확인</th><td>11. 30. 기준 미인정 결석·지각·조퇴·결과 기록이 맞는지 담임에게 확인합니다. 인정 처리 가능한 사유는 서류가 필요한지 미리 묻습니다.</td></tr>
+        <tr><th>제출 후</th><td>접수 확인 여부(수신 확인)를 마감 전에 학교 또는 대행처에서 확인합니다. 접수 대행처는 해마다 지정되므로 공고문에서 확인하세요.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3><span class="sec">5.3</span>기숙사 Q&amp;A</h3>
+  <dl class="qa">
+    <dt>기숙사는 필수인가요?</dt>
+    <dd>동탄국제고는 전교생이 기숙사에서 생활하는 학교이며 방은 대부분 2인 1실입니다(일부 3인실 안내가 있으니 배정 방식은 학교에 확인).</dd>
+    <dt>집이 화성시인데 평일과 주말은 어떻게 되나요?</dt>
+    <dd>금요일에 귀가하고 일요일에 입소하는 방식이며, 화성시 거주 학생은 이동 시간이 10~30분 안팎이어서 주말에 이동으로 소모되는 체력과 시간이 적습니다.</dd>
+    <dt>학비와 기숙사비는 얼마나 드나요?</dt>
+    <dd>공립 특수목적고라 수업료는 면제이고, 기숙사비·급식비 등 수익자부담경비는 납부합니다. 정확한 금액은 학교 공지와 학교알리미의 공시 정보로 확인하세요.</dd>
+    <dt>룸메이트와 생활 습관이 다르면 어쩌나요?</dt>
+    <dd>2인 1실이므로 면접 인성 질문으로도 자주 이어질 수 있는 주제입니다. 기상·소등·정리 시간 같은 규칙을 먼저 이야기해 합의하는 연습을 해 두면 좋습니다.</dd>
+    <dt>입학 전에 무엇을 준비하면 좋을까요?</dt>
+    <dd>기상·취침 시간을 학교 일과에 맞춰 조금씩 당기고, 스스로 주간 계획을 세워 점검하는 습관을 만들어 두세요. 기숙사 세부 규칙은 합격 후 안내에 따릅니다.</dd>
+  </dl>
+</section>
+
+<!-- ===================== REF ===================== -->
+<section class="sheet is-hidden" id="sec-ref" aria-labelledby="h-ref">
+  <p class="part-no">Reference</p>
+  <h2 id="h-ref">공식 레퍼런스 10선</h2>
+  <p class="lede">모든 링크는 새 창에서 열립니다. 요강과 일정은 학교 공식 공고문이 최종 기준입니다.</p>
+  <ol class="ref">
+    <li><span class="nm">동탄국제고등학교 공식 홈페이지</span><span class="ds">입학안내·모집요강 원문</span><a class="ur" href="https://www.dtg.hs.kr/" target="_blank" rel="noopener noreferrer">https://www.dtg.hs.kr/</a></li>
+    <li><span class="nm">경기도교육청 고등학교 입학·전학 포털</span><span class="ds">자기주도학습전형 기본계획</span><a class="ur" href="https://satp.goe.go.kr/" target="_blank" rel="noopener noreferrer">https://satp.goe.go.kr/</a></li>
+    <li><span class="nm">학교알리미</span><span class="ds">동탄국제고 교육과정·진학현황·기숙사 공시 정보</span><a class="ur" href="https://www.schoolinfo.go.kr/" target="_blank" rel="noopener noreferrer">https://www.schoolinfo.go.kr/</a></li>
+    <li><span class="nm">유웨이 어플라이</span><span class="ds">대표적인 온라인 원서접수 대행 사이트입니다. 동탄국제고의 2027학년도 접수처가 이곳인지는 확인되지 않았으므로 반드시 학교 공고문의 접수처 안내를 따르세요.</span><a class="ur" href="https://www.uwayapply.com/" target="_blank" rel="noopener noreferrer">https://www.uwayapply.com/</a></li>
+    <li><span class="nm">화성오산교육지원청</span><span class="ds">중학교 학군 및 지역우수자 학구 행정 안내</span><a class="ur" href="https://www.goehs.kr/" target="_blank" rel="noopener noreferrer">https://www.goehs.kr/</a></li>
+    <li><span class="nm">국제바칼로레아 본부 IBO</span><span class="ds">IB DP 교육과정 안내</span><a class="ur" href="https://www.ibo.org/" target="_blank" rel="noopener noreferrer">https://www.ibo.org/</a></li>
+    <li><span class="nm">대입정보포털 어디가</span><span class="ds">2028 대입 개편안 및 대학별 학생부 반영 기준</span><a class="ur" href="https://www.adiga.kr/" target="_blank" rel="noopener noreferrer">https://www.adiga.kr/</a></li>
+    <li><span class="nm">경기고교학점제 지원센터 (경기교육모아)</span><span class="ds">2022 개정 교육과정 및 내신 5등급제 안내</span><a class="ur" href="https://more.goe.go.kr/hagjeomje/index.do" target="_blank" rel="noopener noreferrer">https://more.goe.go.kr/hagjeomje/index.do</a></li>
+    <li><span class="nm">베리타스알파</span><span class="ds">국제고·외고 연도별 경쟁률 및 대입 실적 분석 전문지</span><a class="ur" href="https://www.veritas-a.com/" target="_blank" rel="noopener noreferrer">https://www.veritas-a.com/</a></li>
+    <li><span class="nm">정부24</span><span class="ds">주민등록등본 및 사회통합전형 증빙서류 온라인 발급</span><a class="ur" href="https://www.gov.kr/" target="_blank" rel="noopener noreferrer">https://www.gov.kr/</a></li>
+  </ol>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>작성 기준일 2026. 10. 27. 이 매뉴얼은 2027학년도 동탄국제고 신입생 입학전형 요강과 정리 시점의 공개 자료를 바탕으로 한 참고 자료이며, 학교가 공고한 원문이 항상 우선합니다. 경쟁률과 대입 실적은 변동될 수 있습니다. 이 페이지에 입력한 내용은 이 브라우저에만 저장되고 외부로 전송되지 않습니다.</p>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  var KEY = 'dtig27:';
+  function $(s, r) { return (r || document).querySelector(s); }
+  function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+  function load(k, d) {
+    try { var v = localStorage.getItem(KEY + k); return v === null ? d : JSON.parse(v); } catch (e) { return d; }
+  }
+  function save(k, v) { try { localStorage.setItem(KEY + k, JSON.stringify(v)); } catch (e) {} }
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text !== undefined && text !== null) n.textContent = text;
+    return n;
+  }
+  function len(s) { return Array.from(s).length; }
+  function noWs(s) { return s.replace(/\s+/g, ''); }
+  function toInt(v) { var n = parseInt(v, 10); return isFinite(n) && n > 0 ? Math.min(n, 999) : 0; }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+  /* ---------- tabs ---------- */
+  var TABS = ['part1', 'part2', 'part3', 'part4', 'part5', 'ref', 'all'];
+
+  function autosize(ta) {
+    if (!ta.scrollHeight) return;
+    ta.style.height = 'auto';
+    ta.style.height = (ta.scrollHeight + 2) + 'px';
+  }
+  function autosizeAll() { $$('.ws textarea').forEach(autosize); }
+
+  function switchTab(id, noScroll) {
+    if (TABS.indexOf(id) < 0) id = 'part1';
+    $$('.sheet').forEach(function (s) {
+      s.classList.toggle('is-hidden', !(id === 'all' || s.id === 'sec-' + id));
+    });
+    TABS.forEach(function (t) {
+      var b = $('#btn-' + t);
+      if (!b) return;
+      b.classList.toggle('active', t === id);
+      if (t === id) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current');
+    });
+    try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    autosizeAll();
+    if (!noScroll) {
+      var top = $('#content').getBoundingClientRect().top + window.pageYOffset - $('#nav').offsetHeight - 8;
+      window.scrollTo(0, Math.max(0, top));
+    }
+  }
+
+  /* ---------- D-Day ---------- */
+  var MILESTONES = [
+    [2026, 11, 30, '출결 산출 마감'],
+    [2026, 12, 4, '1단계 원서접수 시작'],
+    [2026, 12, 10, '1단계 접수·서류 마감 17:00'],
+    [2026, 12, 14, '1단계 합격자 발표'],
+    [2026, 12, 15, '자기소개서 입력 시작'],
+    [2026, 12, 16, '자기소개서 입력 마감 17:00'],
+    [2026, 12, 24, '2단계 면접'],
+    [2026, 12, 29, '최종 합격자 발표']
+  ];
+  function daysUntil(y, m, d) {
+    var now = new Date();
+    var t0 = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    return Math.round((new Date(y, m - 1, d) - t0) / 86400000);
+  }
+  function ddayLabel(n) { return n > 0 ? 'D-' + n : (n === 0 ? 'D-DAY' : 'D+' + (-n)); }
+  function renderDday() {
+    var label = ddayLabel(daysUntil(2026, 12, 4));
+    $('#dday-main').textContent = label;
+    $('#dday-inline').textContent = label;
+    var nextText = '전형 일정이 모두 지났습니다.';
+    for (var i = 0; i < MILESTONES.length; i++) {
+      var m = MILESTONES[i], n = daysUntil(m[0], m[1], m[2]);
+      if (n >= 0) { nextText = '다음 일정: ' + m[3] + ' (' + m[1] + '. ' + m[2] + '., ' + ddayLabel(n) + ')'; break; }
+    }
+    $('#dday-next').textContent = nextText;
+    $('#dday-inline-next').textContent = nextText;
+  }
+
+  /* ---------- simulator ---------- */
+  var ENG_PTS = { A: 40, B: 36, C: 32, D: 28, E: 24 };
+  var ENG_SEMS = ['2학년 1학기', '2학년 2학기', '3학년 1학기', '3학년 2학기'];
+  var SUBJ = [
+    ['3학년 2학기', '국어'], ['3학년 2학기', '사회(역사)'],
+    ['3학년 1학기', '국어'], ['3학년 1학기', '사회(역사)'],
+    ['2학년 2학기', '국어'], ['2학년 2학기', '사회(역사)'],
+    ['2학년 1학기', '국어'], ['2학년 1학기', '사회(역사)']
+  ];
+  var SAMPLES = {
+    A: { eng: ['A', 'A', 'A', 'A'], abs: 0, late: 0, subj: ['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A'] },
+    B: { eng: ['A', 'A', 'A', 'A'], abs: 0, late: 0, subj: ['A', 'A', 'A', 'A', 'B', 'A', 'B', 'A'] },
+    C: { eng: ['A', 'A', 'A', 'A'], abs: 0, late: 2, subj: ['A', 'B', 'A', 'B', 'A', 'A', 'A', 'A'] },
+    D: { eng: ['A', 'A', 'B', 'A'], abs: 1, late: 4, subj: ['B', 'A', 'A', 'A', 'A', 'A', 'A', 'A'] }
+  };
+  var simEng = [], simSubj = [];
+
+  function buildSim() {
+    var engBox = $('#sim-eng');
+    ENG_SEMS.forEach(function (name, i) {
+      var f = el('div', 'field');
+      var lb = el('label', null, '영어 ' + name);
+      var sel = document.createElement('select');
+      sel.id = 'sim-eng-' + i;
+      lb.htmlFor = sel.id;
+      ['A', 'B', 'C', 'D', 'E'].forEach(function (g) {
+        var o = el('option', null, g + ' (' + ENG_PTS[g] + '점)');
+        o.value = g;
+        sel.appendChild(o);
+      });
+      f.appendChild(lb); f.appendChild(sel);
+      engBox.appendChild(f);
+      simEng.push(sel);
+    });
+
+    var tb = $('#sim-subj');
+    SUBJ.forEach(function (s, i) {
+      var tr = document.createElement('tr');
+      tr.appendChild(el('th', null, String(i + 1)));
+      tr.appendChild(el('td', null, s[0]));
+      tr.appendChild(el('td', null, s[1]));
+      var td = document.createElement('td');
+      var sel = document.createElement('select');
+      sel.id = 'sim-subj-' + i;
+      sel.setAttribute('aria-label', (i + 1) + '순위 ' + s[0] + ' ' + s[1] + ' 성취도');
+      [['A', 'A'], ['B', 'B'], ['C', 'C 이하']].forEach(function (p) {
+        var o = el('option', null, p[1]);
+        o.value = p[0];
+        sel.appendChild(o);
+      });
+      td.appendChild(sel);
+      tr.appendChild(td);
+      var j = el('td', null, '');
+      j.id = 'sim-j-' + i;
+      tr.appendChild(j);
+      tb.appendChild(tr);
+      simSubj.push(sel);
+    });
+
+    var root = $('#sim');
+    root.addEventListener('input', runSim);
+    root.addEventListener('change', runSim);
+    $$('[data-sample]').forEach(function (b) {
+      b.addEventListener('click', function () { applySample(SAMPLES[b.getAttribute('data-sample')]); });
+    });
+    $('#sim-reset').addEventListener('click', function () { applySample(SAMPLES.A); });
+  }
+
+  function applySample(s) {
+    s.eng.forEach(function (g, i) { simEng[i].value = g; });
+    s.subj.forEach(function (g, i) { simSubj[i].value = g; });
+    $('#sim-abs').value = s.abs;
+    $('#sim-late').value = s.late;
+    runSim();
+  }
+
+  function caseText(cs, ctx) {
+    var first = ctx.first, g = first >= 0 ? ctx.subj[first] : '';
+    var gLabel = g === 'C' ? 'C 이하' : g;
+    var where = first >= 0 ? (first + 1) + '순위(' + SUBJ[first][0] + ' ' + SUBJ[first][1] + ')' : '';
+    if (cs === 'A') return {
+      title: '160점 만점 · 국어·사회 전 과목 A',
+      warn: false,
+      paras: [
+        '영어 4개 학기가 모두 A이고 출결 감점이 없어 1단계는 160점 만점이며, 국어·사회 8개 과목도 모두 A라서 동점자 처리 8개 순위 어디에서도 불리한 지점이 없습니다.',
+        '2026학년도 일반전형은 1단계 합격선이 160점(만점)이었고 동점자 처리를 8순위까지 적용했습니다. 160점 안에서도 국어·사회 성취도로 줄이 갈리는데, 8과목이 모두 A이면 그 줄에서 가장 앞에 서므로 일반전형 1단계 통과 가능성이 가장 높은 위치입니다.',
+        '따라서 선택 기준은 면접 경쟁률입니다. 일반전형은 면접 대상을 정원의 2배수(동점자 포함)로 정하므로 최근 3개년 면접 경쟁률이 2.06 ~ 2.19 : 1이었고, 지역우수자전형은 지원자가 80명 이하이면 전원이 통과해 지원 경쟁률이 곧 면접 경쟁률이 됩니다(최근 5개년 지역우수자 경쟁률 1.43 ~ 2.68 : 1). 지역우수자전형을 우선 검토하되 접수 마감 직전에 두 전형의 경쟁률을 비교해 확정하세요. 2024학년도처럼 지역우수자 경쟁률이 일반전형을 앞지른 해도 있었습니다.'
+      ]
+    };
+    if (cs === 'B') return {
+      title: '160점 + 2학년(5~8순위) 국어·사회에서 최초 ' + gLabel,
+      warn: false,
+      paras: [
+        '1단계 총점은 160점 만점이고 3학년 구간(1~4순위)의 국어·사회는 모두 A입니다. 처음 ' + gLabel + '가 나타나는 곳은 ' + where + '로, 동점자 비교에서 가장 늦게 쓰이는 2학년 구간입니다.',
+        '다만 2026학년도 일반전형은 합격선이 160점(만점)이었고 동점자 처리가 2학년 1학기 사회(8순위)까지 갔습니다(면접 대상 247명). 160점이어도 국어·사회 성취도로 합격선이 갈린다는 뜻이므로, 앞쪽 4개 순위가 A여서 유리하더라도 일반전형 통과를 장담할 수는 없습니다.',
+        '안전 확보를 우선하면 지역우수자전형을 권장합니다. 일반전형을 택한다면 1단계 탈락 가능성을 감수해야 합니다(최근 3개년 일반전형 1단계 탈락 44명·11명·17명).'
+      ]
+    };
+    if (cs === 'C') return {
+      title: '160점 + 3학년(1~4순위) 국어·사회에서 최초 ' + gLabel,
+      warn: true,
+      paras: [
+        '1단계 총점은 160점이지만, 동점자 비교에서 가장 먼저 쓰이는 3학년 구간의 ' + where + '에서 처음으로 ' + gLabel + '가 나타납니다.',
+        '2026학년도 일반전형은 합격선이 160점(만점)이었고 동점자 처리를 8순위까지 적용했습니다. 이 경우 3학년 2학기 국어부터 비교하므로 같은 160점인 상대가 이 구간에서 A를 갖고 있으면 먼저 밀립니다. 일반전형 1단계 탈락은 2023학년도 54명(18.4%), 2024학년도 44명(14.3%), 2026학년도 17명(6.4%)이었습니다.',
+        '화성 지역우수자전형 지원을 강력히 권고합니다. 지역우수자전형은 2025·2026학년도에 1단계 탈락자가 없었습니다(학교 공지).'
+      ]
+    };
+    var why = [];
+    if (ctx.engBelow > 0) why.push('영어 B 이하 ' + ctx.engBelow + '개 학기(영어 환산 ' + ctx.engSum + '점)');
+    if (ctx.ded > 0) why.push('출결 감점 ' + ctx.ded.toFixed(1) + '점');
+    return {
+      title: '160점 미만 (영어 B 이하 또는 출결 감점)',
+      warn: true,
+      paras: [
+        '1단계 총점이 ' + ctx.total.toFixed(1) + '점으로 160점에 못 미칩니다. 원인: ' + why.join(', ') + '.',
+        '2026학년도 일반전형 1단계 합격선은 160점(만점)이었습니다. 같은 수준이라면 160점 미만은 일반전형 1단계를 통과하기 어렵습니다. 영어 B 한 학기(156점)나 출결 0.1점 감점만으로도 합격선 아래에 놓입니다.',
+        '지역우수자전형(자격에 해당한다면 사회통합전형)을 사실상 필수로 보고 선택하길 권합니다. 다만 지역우수자전형도 지원자가 80명을 넘으면 1단계 컷이 생기므로(2023학년도 85명 지원·5명 탈락, 2024학년도 107명 지원·21명 탈락), 접수 마감 전 지원 현황을 꼭 확인하세요.'
+      ]
+    };
+  }
+
+  function runSim() {
+    var eng = simEng.map(function (s) { return s.value; });
+    var engSum = eng.reduce(function (a, g) { return a + ENG_PTS[g]; }, 0);
+    var engBelow = eng.filter(function (g) { return g !== 'A'; }).length;
+    var abs = toInt($('#sim-abs').value), late = toInt($('#sim-late').value);
+    var lateDays = Math.floor(late / 3);
+    var eq = abs + lateDays;
+    var ded = Math.min(5, eq) / 10;
+    var total = engSum - ded;
+    var subj = simSubj.map(function (s) { return s.value; });
+    var first = -1;
+    for (var i = 0; i < subj.length; i++) { if (subj[i] !== 'A') { first = i; break; } }
+
+    subj.forEach(function (v, k) {
+      var c = $('#sim-j-' + k);
+      c.textContent = '';
+      c.parentNode.className = k === first ? 'rank-first' : '';
+      if (k === first) c.appendChild(el('span', 'flag', '최초 ' + (v === 'C' ? 'C 이하' : v) + ' 발생'));
+      else if (v === 'A') c.textContent = '이상 없음';
+      else c.textContent = '참고 (앞 순위에서 이미 발생)';
+    });
+
+    var cs;
+    if (total < 160) cs = 'D';
+    else if (first === -1) cs = 'A';
+    else cs = first <= 3 ? 'C' : 'B';
+    var info = caseText(cs, { first: first, subj: subj, total: total, ded: ded, engSum: engSum, engBelow: engBelow });
+
+    var out = $('#sim-out');
+    out.textContent = '';
+    var row = el('div', 'score-row');
+    var big = el('div', 'score-big', total.toFixed(1));
+    big.appendChild(el('small', null, '/ 160점 (1단계 환산 총점)'));
+    row.appendChild(big);
+    out.appendChild(row);
+    out.appendChild(el('p', 'score-sub', '영어 환산 ' + engSum + '점 − 출결 감점 ' + ded.toFixed(1) + '점. 환산 미인정 결석일수 ' + eq + '일 (결석 ' + abs + '일 + 지각·조퇴·결과 ' + late + '회 ÷ 3의 몫 ' + lateDays + '일, 나머지는 버림).'));
+    out.appendChild(el('p', 'score-sub', first === -1
+      ? '동점자 처리: 국어·사회 8개 과목이 모두 A여서 불리한 순위가 없습니다.'
+      : '동점자 처리: ' + (first + 1) + '순위(' + SUBJ[first][0] + ' ' + SUBJ[first][1] + ')에서 처음으로 ' + (subj[first] === 'C' ? 'C 이하' : subj[first]) + '가 발생합니다.'));
+    out.appendChild(el('p', 'score-sub', '국어·사회 성취도를 바꿔도 위의 1단계 총점은 변하지 않으며, 2배수 경계의 동점자 비교에만 영향을 줍니다.'));
+
+    var h = el('p', 'case-ttl');
+    h.appendChild(el('span', 'case-tag' + (info.warn ? ' warn' : ''), 'Case ' + cs));
+    h.appendChild(document.createTextNode(info.title));
+    out.appendChild(h);
+    var body = el('div', 'case-body');
+    info.paras.forEach(function (p) { body.appendChild(el('p', null, p)); });
+    out.appendChild(body);
+    out.appendChild(el('p', 'hint', '이 판독은 과거 통계와 요강의 동점자 규정에 근거한 참고용이며 합격을 보장하지 않습니다.'));
+  }
+
+  /* ---------- essay checker ---------- */
+  var ZERO = ['토익', '토플', '텝스', 'toeic', 'toefl', 'teps', 'hsk', 'jlpt', '공인', '어학', '영재원', '영재학급', '영재교육', '올림피아드', '경시'];
+  var DEDUCT = [
+    ['수상', '수상'], ['상장', '상장'], ['금상', '금상'], ['은상', '은상'], ['동상', '동상'], ['1등', '1등'],
+    ['전교', '전교(?!생)'], ['백분위', '백분위'], ['석차', '석차'], ['대회', '대회'], ['교수', '교수'],
+    ['판사', '판사'], ['변호사', '변호사'], ['대기업', '대기업'], ['대상', '대상'],
+    ['의사', '의사(?!소통|결정|표현|표시|전달|반영)']
+  ];
+  function esc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  var RULES = ZERO.map(function (w) { return { label: w, re: esc(w), zero: true }; })
+    .concat(DEDUCT.map(function (d) { return { label: d[0], re: d[1], zero: false }; }));
+
+  function scan(text) {
+    var found = [];
+    RULES.forEach(function (r) {
+      var rx = new RegExp(r.re, 'gi'), m, hits = [];
+      while ((m = rx.exec(text)) !== null) {
+        if (m[0] === '') { rx.lastIndex++; continue; }
+        hits.push(text.slice(Math.max(0, m.index - 10), m.index + m[0].length + 10).replace(/\s+/g, ' '));
+      }
+      if (hits.length) found.push({ rule: r, hits: hits });
+    });
+    found.sort(function (a, b) { return (b.rule.zero ? 1 : 0) - (a.rule.zero ? 1 : 0); });
+    return found;
+  }
+
+  function updateChecker() {
+    var t = $('#chk-text').value;
+    var lim = parseInt($('#chk-mode').value, 10);
+    var withWs = len(t), without = len(noWs(t));
+    var box = $('#chk-counts');
+    box.textContent = '';
+    [['공백 포함', withWs + '자'], ['공백 제외', without + '자'], ['한도', lim + '자']].forEach(function (p) {
+      var s = el('span');
+      s.appendChild(document.createTextNode(p[0] + ' '));
+      s.appendChild(el('b', null, p[1]));
+      box.appendChild(s);
+    });
+    var diff = lim - without;
+    box.appendChild(el('span', diff < 0 ? 'over' : null, diff < 0 ? '초과 ' + (-diff) + '자' : '남은 분량 ' + diff + '자'));
+    var pct = Math.min(100, without / lim * 100);
+    $('#chk-fill').style.width = pct + '%';
+    var meter = $('#chk-meter');
+    meter.classList.toggle('over', diff < 0);
+    meter.setAttribute('aria-valuenow', String(Math.round(pct)));
+
+    var wbox = $('#chk-warn');
+    wbox.textContent = '';
+    if (!t.trim()) return;
+    var found = scan(t);
+    if (!found.length) {
+      wbox.appendChild(el('p', 'clean', '검출된 위험어가 없습니다. 그래도 수상·성적·직업을 짐작하게 하는 우회 표현이 없는지 직접 읽어 확인하세요.'));
+      return;
+    }
+    found.forEach(function (f) {
+      var item = el('div', 'warn-item');
+      item.appendChild(el('span', 'lv' + (f.rule.zero ? ' zero' : ''), f.rule.zero ? '0점 위험' : '감점 위험'));
+      item.appendChild(el('span', null, '‘' + f.rule.label + '’ ' + f.hits.length + '회'));
+      item.appendChild(el('span', 'ctx', '…' + f.hits[0] + '…' + (f.hits.length > 1 ? ' 외 ' + (f.hits.length - 1) + '곳' : '')));
+      wbox.appendChild(item);
+    });
+  }
+
+  function buildChecker() {
+    $$('.js-count').forEach(function (n) {
+      var p = $('#' + n.getAttribute('data-of'));
+      n.textContent = String(len(noWs(p.textContent)));
+    });
+    $('#chk-text').addEventListener('input', updateChecker);
+    $('#chk-mode').addEventListener('change', updateChecker);
+    $('#chk-clear').addEventListener('click', function () { $('#chk-text').value = ''; updateChecker(); });
+    var MODE = { 'essay-1': '600-1', 'essay-2': '600-2', 'essay-3': '300', all: '1500' };
+    $$('[data-load]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var k = b.getAttribute('data-load');
+        var text = k === 'all'
+          ? ['essay-1', 'essay-2', 'essay-3'].map(function (i) { return $('#' + i).textContent.trim(); }).join('\n\n')
+          : $('#' + k).textContent.trim();
+        $('#chk-mode').value = MODE[k];
+        $('#chk-text').value = text;
+        updateChecker();
+        $('#checker').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+    updateChecker();
+  }
+
+  /* ---------- interview timer ---------- */
+  var T_TOTAL = 90000, tLeft = T_TOTAL, tEnd = 0, tId = null, tDone = false;
+  var PHASES = [
+    { n: 'P · 주장', a: 0, b: 15 },
+    { n: 'R · 이유', a: 15, b: 40 },
+    { n: 'E · 근거·사례', a: 40, b: 70 },
+    { n: 'P · 재강조', a: 70, b: 90 }
+  ];
+  function fmtClock(ms) {
+    var s = Math.max(0, Math.ceil(ms / 1000));
+    return pad(Math.floor(s / 60)) + ':' + pad(s % 60);
+  }
+  function renderTimer() {
+    var ms = tLeft;
+    $('#tm-clock').textContent = fmtClock(ms);
+    var elapsed = (T_TOTAL - ms) / 1000;
+    var idx = -1;
+    PHASES.forEach(function (p, i) { if (elapsed >= p.a && elapsed < p.b) idx = i; });
+    $$('#tm-segs .seg').forEach(function (sg, i) {
+      var p = PHASES[i];
+      sg.classList.toggle('cur', i === idx);
+      var w = elapsed <= p.a ? 0 : (elapsed >= p.b ? 100 : (elapsed - p.a) / (p.b - p.a) * 100);
+      $('.fillbar', sg).style.width = w + '%';
+    });
+    var ph = $('#tm-phase');
+    if (tDone) ph.textContent = '종료 — 90초가 모두 지났습니다.';
+    else if (idx === -1 || (!tId && ms === T_TOTAL)) ph.textContent = '준비 (시작을 누르면 P 구간부터 진행됩니다)';
+    else ph.textContent = (tId ? '진행 중' : '일시정지') + ' — ' + PHASES[idx].n + ' 구간 (구간 종료까지 ' + Math.ceil(PHASES[idx].b - elapsed) + '초)';
+  }
+  function tick() {
+    tLeft = tEnd - Date.now();
+    if (tLeft <= 0) {
+      tLeft = 0; tDone = true;
+      clearInterval(tId); tId = null;
+      $('#tm-start').disabled = false; $('#tm-pause').disabled = true;
+      $('#tm-status').textContent = '종료. 답변이 어느 구간에서 길어졌는지 돌아보세요.';
+    }
+    renderTimer();
+  }
+  function buildTimer() {
+    $('#tm-start').addEventListener('click', function () {
+      if (tId) return;
+      if (tDone || tLeft <= 0) { tLeft = T_TOTAL; tDone = false; }
+      tEnd = Date.now() + tLeft;
+      tId = setInterval(tick, 100);
+      $('#tm-start').disabled = true; $('#tm-pause').disabled = false;
+      $('#tm-status').textContent = '질문 하나를 정해 소리 내어 답해 보세요.';
+      tick();
+    });
+    $('#tm-pause').addEventListener('click', function () {
+      if (!tId) return;
+      clearInterval(tId); tId = null;
+      tLeft = Math.max(0, tEnd - Date.now());
+      $('#tm-start').disabled = false; $('#tm-pause').disabled = true;
+      renderTimer();
+    });
+    $('#tm-reset').addEventListener('click', function () {
+      clearInterval(tId); tId = null; tDone = false; tLeft = T_TOTAL;
+      $('#tm-start').disabled = false; $('#tm-pause').disabled = true;
+      $('#tm-status').textContent = '질문 하나를 정해 소리 내어 답해 보세요. 90초가 지나면 종료됩니다.';
+      renderTimer();
+    });
+    renderTimer();
+  }
+
+  /* ---------- PREP worksheet ---------- */
+  var WS_ITEMS = [
+    { k: 'q1', t: '문항 1 · 탐구 검증', h: '자소서에 쓴 탐구 주제나 읽은 책을 검증하는 질문을 적어 보세요.', ph: '예) 탐구하면서 생각이 바뀐 부분이 있나요?' },
+    { k: 'q2', t: '문항 2 · 진로 연계', h: '진로와 입학 후 계획을 묻는 질문을 적어 보세요.', ph: '예) 입학 후 3년 동안 무엇을 하겠습니까?' },
+    { k: 'q3', t: '문항 3 · 인성·갈등', h: '협력, 규칙, 갈등 상황을 묻는 질문을 적어 보세요.', ph: '예) 모둠에서 의견이 갈렸을 때 어떻게 했나요?' }
+  ];
+  var PREP = [['p', 'P · 주장 (15초)'], ['r', 'R · 이유 (25초)'], ['e', 'E · 근거·사례 (30초)'], ['x', 'P · 재강조 (20초)']];
+  var wsData = {}, wsTimer = null;
+
+  function buildWorksheet() {
+    wsData = load('ws', {});
+    var root = $('#ws-root');
+    WS_ITEMS.forEach(function (it) {
+      var box = el('div', 'ws');
+      box.appendChild(el('h4', null, it.t));
+      box.appendChild(el('p', 'hint', it.h));
+      var q = el('div', 'field q');
+      var ql = el('label', null, '질문');
+      var qt = document.createElement('textarea');
+      qt.id = 'ws-' + it.k + '-q';
+      qt.rows = 2; qt.placeholder = it.ph;
+      qt.setAttribute('data-k', it.k); qt.setAttribute('data-f', 'q');
+      ql.htmlFor = qt.id;
+      q.appendChild(ql); q.appendChild(qt);
+      box.appendChild(q);
+      var grid = el('div', 'ws-grid');
+      PREP.forEach(function (f) {
+        var fd = el('div', 'field');
+        var lb = el('label', null, f[1]);
+        var ta = document.createElement('textarea');
+        ta.id = 'ws-' + it.k + '-' + f[0];
+        ta.rows = 3;
+        ta.setAttribute('data-k', it.k); ta.setAttribute('data-f', f[0]);
+        lb.htmlFor = ta.id;
+        fd.appendChild(lb); fd.appendChild(ta);
+        grid.appendChild(fd);
+      });
+      box.appendChild(grid);
+      root.appendChild(box);
+    });
+    $$('#ws-root textarea').forEach(function (ta) {
+      var k = ta.getAttribute('data-k'), f = ta.getAttribute('data-f');
+      ta.value = (wsData[k] && wsData[k][f]) || '';
+      ta.addEventListener('input', function () {
+        wsData[k] = wsData[k] || {};
+        wsData[k][f] = ta.value;
+        autosize(ta);
+        clearTimeout(wsTimer);
+        wsTimer = setTimeout(function () { save('ws', wsData); }, 250);
+      });
+    });
+    $('#ws-clear').addEventListener('click', function () {
+      if (!window.confirm('워크시트에 적은 내용을 모두 지울까요? 되돌릴 수 없습니다.')) return;
+      wsData = {};
+      save('ws', wsData);
+      $$('#ws-root textarea').forEach(function (ta) { ta.value = ''; autosize(ta); });
+    });
+  }
+
+  /* ---------- checklist ---------- */
+  var CK = [
+    { g: '지금 ~ 11월 30일', items: [
+      ['k1', '지역우수자 자격(2026. 3. 3. 이전부터 화성시 중학교 재학)을 학교에서 확인'],
+      ['k2', '시뮬레이터로 내신·출결 케이스(A~D)를 확인하고 전형 후보를 정함'],
+      ['k3', '담임에게 3학년 2학기 영어·국어·사회 성취도가 확정되는 시점을 확인'],
+      ['k4', '11. 30. 기준 미인정 출결 기록을 점검하고, 인정 처리가 가능한 사유는 서류를 챙김'],
+      ['k5', '독서활동상황에 진로와 이어지는 책 3~5권을 등재하고 핵심 주장을 정리 (기록 마감 시점은 담임 확인)'],
+      ['k6', '자기소개서 세 문항 초안을 완성하고 점검기로 1,500자와 금지어 확인'],
+      ['k7', '면접 PREP 워크시트 세 문항 초안 작성']
+    ] },
+    { g: '12월 4일 ~ 12월 10일 (1단계 접수)', items: [
+      ['k8', '접수 대행처와 모집요강 원문의 제출 서류 목록을 대조'],
+      ['k9', '접수 마감 직전 일반·지역우수자 접수 현황(공개되는 경우)을 비교하고 전형 확정'],
+      ['k10', '온라인 원서 접수 완료'],
+      ['k11', '출력물과 서류를 방문 또는 등기로 제출 (12. 10. 17:00 도착 기준)'],
+      ['k12', '접수와 서류 수신 확인']
+    ] },
+    { g: '12월 14일 ~ 12월 16일 (1단계 발표·자소서 입력)', items: [
+      ['k13', '12. 14. 1단계 합격자 발표 확인'],
+      ['k14', '12. 15.~16. 17:00까지 자기소개서 입력 (미리 쓴 원고를 글자 수 재확인 후 붙여넣기)'],
+      ['k15', '입력 후 저장·제출 완료 확인']
+    ] },
+    { g: '12월 17일 ~ 12월 29일 (면접·최종 발표)', items: [
+      ['k16', '자소서와 독서활동 기록을 다시 읽고 예상 질문 15선에 답 연습'],
+      ['k17', '90초 타이머로 PREP 답변 연습 (질문 5개 이상)'],
+      ['k18', '면접 안내문(시간·장소·준비물) 확인'],
+      ['k19', '12. 24. 면접'],
+      ['k20', '12. 29. 최종 합격자 발표 확인']
+    ] }
+  ];
+  var ckState = {};
+
+  function updateChecklist() {
+    var total = 0, done = 0;
+    CK.forEach(function (grp, gi) {
+      var d = 0;
+      grp.items.forEach(function (it) { total++; if (ckState[it[0]]) { done++; d++; } });
+      var c = $('#ck-grp-' + gi);
+      if (c) c.textContent = d + ' / ' + grp.items.length;
+    });
+    var pct = total ? Math.round(done / total * 100) : 0;
+    $('#ck-pct').textContent = pct + '%';
+    $('#ck-fill').style.width = pct + '%';
+    $('#ck-meter').setAttribute('aria-valuenow', String(pct));
+    $('#ck-count').textContent = total + '개 항목 중 ' + done + '개 완료';
+  }
+  function buildChecklist() {
+    ckState = load('ck', {});
+    var root = $('#ck-root');
+    CK.forEach(function (grp, gi) {
+      var box = el('div', 'chk-group');
+      var h = el('h4', null, grp.g);
+      var cnt = el('span', null, '');
+      cnt.id = 'ck-grp-' + gi;
+      h.appendChild(cnt);
+      box.appendChild(h);
+      grp.items.forEach(function (it) {
+        var lb = el('label', 'chk' + (ckState[it[0]] ? ' done' : ''));
+        var cb = document.createElement('input');
+        cb.type = 'checkbox'; cb.id = 'ck-' + it[0]; cb.checked = !!ckState[it[0]];
+        cb.addEventListener('change', function () {
+          if (cb.checked) ckState[it[0]] = true; else delete ckState[it[0]];
+          lb.classList.toggle('done', cb.checked);
+          save('ck', ckState);
+          updateChecklist();
+        });
+        lb.appendChild(cb);
+        lb.appendChild(el('span', null, it[1]));
+        box.appendChild(lb);
+      });
+      root.appendChild(box);
+    });
+    $('#ck-reset').addEventListener('click', function () {
+      if (!window.confirm('체크한 항목을 모두 해제할까요?')) return;
+      ckState = {};
+      save('ck', ckState);
+      $$('#ck-root input').forEach(function (cb) { cb.checked = false; cb.parentNode.classList.remove('done'); });
+      updateChecklist();
+    });
+    updateChecklist();
+  }
+
+  /* ---------- init ---------- */
+  function init() {
+    TABS.forEach(function (t) {
+      $('#btn-' + t).addEventListener('click', function () { switchTab(t); });
+    });
+    $('#btn-print').addEventListener('click', function () { window.print(); });
+    window.addEventListener('beforeprint', function () { document.body.classList.add('is-printing'); autosizeAll(); });
+    window.addEventListener('afterprint', function () { document.body.classList.remove('is-printing'); });
+
+    renderDday();
+    buildSim();
+    applySample(SAMPLES.A);
+    buildChecker();
+    buildTimer();
+    buildWorksheet();
+    buildChecklist();
+
+    var h = (location.hash || '').replace('#', '');
+    switchTab(TABS.indexOf(h) >= 0 ? h : 'part1', true);
+    window.addEventListener('hashchange', function () {
+      var n = (location.hash || '').replace('#', '');
+      if (TABS.indexOf(n) >= 0) switchTab(n);
+    });
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>
